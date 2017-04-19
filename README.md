@@ -1,4 +1,7 @@
 # Projeto-programacao
-Nome: Bernard Wahba    TIA:31693210  
-Nome: Erik Sardinha    TIA:31640885 
-Nome: Henrique Velardo TIA:31645119
+| Nome          | TIA    |
+|---------------|--------|
+|Bernard Wahba|316932-10| 
+|Henrique Velardo|316451-19|
+|Erik Sardinha |31640885 |
+
