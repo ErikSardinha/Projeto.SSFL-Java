@@ -1,7 +1,7 @@
 # Projeto-programacao
 | **Nome**          | **TIA**    |
 |---------------|--------|
-|Bernard Wahba|31693210| 
-|Henrique Velardo|31645119|
-|Erik Sardinha |31640885 |
+|Bernard Wahba|3169321-0| 
+|Henrique Velardo|3164511-9|
+|Erik Sardinha |3164088-5|
 
