@@ -1,5 +1,7 @@
-# Projeto-programacao
-| **Nome**          | **TIA**    |
+# Soccer Sale League #
+
+## Equipe de Desenvolvedores:
+|     Nome      |  TIA   |
 |---------------|--------|
 |Bernard Wahba|3169321-0| 
 |Henrique Velardo|3164511-9|
