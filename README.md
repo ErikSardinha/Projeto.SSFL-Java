@@ -1,6 +1,9 @@
-# Soccer Sale League #
+# Soccer Sale League
 
-## Equipe de Desenvolvedores:
+## Descrição: 
+O Soccer Sale League é um sistema desenvolvido como parte de um projeto válido pela disciplina de Programação de Sistemas da Faculdade de Computação e Informática da Universidade Presbiteriana Mackenzie, onde serão colocados em prática os conceitos e conteúdo apresentados ao longo do semestre. 
+
+### Equipe de Desenvolvedores:
 |     Nome      |  TIA   |
 |---------------|--------|
 |Bernard Wahba|3169321-0| 
