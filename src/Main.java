@@ -4,12 +4,8 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author 31640885
- */
 public class Main {
-
+        
     /**
      * @param args the command line arguments
      */
