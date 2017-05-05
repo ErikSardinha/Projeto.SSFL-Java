@@ -4,7 +4,7 @@
  * Bernard Wahba - 31693210
  */
 
-public class Main {
+public class Leilao {
         
     /**
      * @param args the command line arguments
