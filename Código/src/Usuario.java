@@ -5,4 +5,9 @@ public class Usuario {
     String email;
     double loteria;
     Elenco elenco;
+    
+    public String darLance() {
+    double lance = 0;
+    return "Valor do lance : " +lance;
+    }
 }

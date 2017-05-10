@@ -7,6 +7,11 @@ public class ADM extends Usuario {
     }
     
     public String adicionarParticipante() {
-    return "Jogador adicionado ao leilão";
+    if (true){
+    return "Participante Adicionado!";
+    }
+    else {
+    return "Não adicionado";
+    }
     }
 }

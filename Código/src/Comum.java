@@ -1,9 +1,8 @@
-//Método p/ alterações conforme o desenvolvimento.
+//Método p/ alterações conforme o desenvolvimento. --branch
 
 public class Comum extends Usuario {
     
-    public String darLance() {
-    double lance = 0;
-    return "Valor do lance : " +lance;
-    }
+  public String Permissão() {
+  return "Permissão";
+  }
 }
