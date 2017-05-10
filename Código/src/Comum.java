@@ -2,11 +2,17 @@
 
 public class Comum extends Usuario {
     
-  public String Permissão() {
-  return "Permissão para entrar no leilão";
   
-  
-  }
+    @Override
+    public String toString(){
+        
+        return permissao();
+    }
+    
+    public String permissao() {
+    
+      return "Pedindo permissão ao ADM";
+    }
   
   
 }

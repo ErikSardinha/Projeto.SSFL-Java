@@ -10,4 +10,10 @@ public class Usuario {
     double lance = 0;
     return "Valor do lance : " +lance;
     }
+    
+    @Override
+    public String toString(){
+    
+    return;
+    }
 }
