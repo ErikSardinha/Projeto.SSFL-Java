@@ -1,5 +1,5 @@
 
-public class Usuario {
+    abstract class  Usuario {
     String nome;
     String nickname;
     String email;
@@ -11,9 +11,9 @@ public class Usuario {
     return "Valor do lance : " +lance;
     }
     
-    @Override
-    public String toString(){
+    //@Override
+    //public String toString(){
     
-    return;
+    //return;
     }
-}
+
