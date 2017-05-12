@@ -8,7 +8,7 @@ public class Comum extends Usuario {
   
     @Override
     public String toString(){
-        String p = JOptionPane.showInputDialog("Deseja entrar em um Leilão?");
+        String p = JOptionPane.showInputDialog(null, "Deseja entrar em um Leilão?");
         return permissao();
     }
     
