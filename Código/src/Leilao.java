@@ -10,5 +10,5 @@
  */
 public class Leilao {
     ADM administrador;
-    Time duracao;
+    time duracao;
 }
