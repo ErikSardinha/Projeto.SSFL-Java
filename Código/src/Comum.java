@@ -12,7 +12,11 @@ public class Comum extends Usuario {
     return "Pedindo permissão ao ADM";
     }
     
-    
+     @Override
+    public String toString(){
+        String p = JOptionPane.showInputDialog(null, "Deseja entrar em um Leilão?");
+        return permissao();
+    }
     
   }
   
