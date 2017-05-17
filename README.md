@@ -1,4 +1,4 @@
-# Soccer Sale League
+# System Sale Foot League
 
 Situação do projeto: Em Andamento       Versão Atual: Alfa 1.0
 
