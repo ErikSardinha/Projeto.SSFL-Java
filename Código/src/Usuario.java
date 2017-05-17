@@ -1,10 +1,13 @@
 
+import javax.swing.JOptionPane;
+
+
     abstract class  Usuario {
-    String nome;
-    String nickname;
-    String email;
-    double loteria;
-    Elenco elenco;
+    private String nome;
+    private String nickname;
+    private String email;
+    private double loteria;
+    private Elenco elenco;
     
     public String darLance() {
     double lance = 0;
