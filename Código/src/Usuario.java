@@ -14,10 +14,51 @@ import javax.swing.JOptionPane;
         this.email = email;
     
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public double getCarteira() {
+        return carteira;
+    }
+
+    public void setCarteira(double carteira) {
+        this.carteira = carteira;
+    }
+
+    public Elenco getElenco() {
+        return elenco;
+    }
+
+    public void setElenco(Elenco elenco) {
+        this.elenco = elenco;
+    }
     
-    public String darLance() {
-    double lance = 0;
-    return "Valor do lance : " +lance;
+    public Lance darLance() {
+    double valor = 0 /* entrada de dados */;
+        Lance lance = new Lance(this,valor);
+        return(lance);
     }
     
     //@Override
