@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,7 +36,19 @@ public class Leilao {
         this.administrador = administrador;
     }
     
-    public void iniciarLeilao(int duracao){
+    @SuppressWarnings("empty-statement")
+    public void iniciarLeilao() throws FileNotFoundException, IOException{
+            
+           Arquivo Controle= new Arquivo();
+        String arq;
+           BufferedReader br;
+        br = new BufferedReader(new FileReader(Controle.localArquivo()+"//src//Jogadores.txt"));
+           while (br.ready()){
+            String linha = br.readLine();
+            String[] lista;
+            lista = linha.split(";");
+           
+           }
         /*
         int tempoAtual;
         tempoAtual = PegarTempo;
