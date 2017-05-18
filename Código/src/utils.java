@@ -18,10 +18,18 @@ public class utils {
     while (nickname == null||nickname.equals("")){
     nickname = JOptionPane.showInputDialog("Digite seu nome de usuario:");
     }
-    System.out.println ("Bem vindo!");
+    System.out.println ("Bem vindo,");
     return nickname;
     } 
     
+    public int tela(){
+    System.out.println("1 - Criar Leilão");
+    System.out.println("2 - Meus Leiolões");
+    System.out.println("3 - Participar de Leilão");
+    String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
+    int selInt = Integer.parseInt(sel);
+    return selInt;
+    }
     
     public utils () {
     

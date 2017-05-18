@@ -1,4 +1,5 @@
 
+import java.io.File;
 import javax.swing.JOptionPane;
 
 
@@ -17,12 +18,17 @@ import javax.swing.JOptionPane;
     }
  
     public void participar(){
-    String p = JOptionPane.showInputDialog("Entrar em Leilão?.");
+    JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
     System.out.println("Entrou.");
     }
     
-    public void criarLeilao(){
-    String c = JOptionPane.showInputDialog("Criar Leilão?");
+    public void criarLeilao(){    
+    int c = JOptionPane.showConfirmDialog(null, "Criar Leilão");
+    if (c == 0){
+    Arquivo control = new Arquivo();
+    File file = new File("");
+    new File(control.localArquivo()+"\\src\\" +this.nickname).mkdir();
+    }
     Leilao leilao = new Leilao(this);
     }
     
@@ -69,9 +75,16 @@ import javax.swing.JOptionPane;
     }
     
     public Lance darLance() {
-    double valor = 0 /* entrada de dados */;
+    double valor = 0;  
+    String vl = JOptionPane.showInputDialog("Valor do lance: ");
+    try {
+        valor = Double.parseDouble(vl);
+    }
+    catch (NumberFormatException e){
+    System.out.println(" sdas ");
+    }
         Lance lance = new Lance(this,valor);
-        return(lance);
+        return lance;
     }
     
     //@Override

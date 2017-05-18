@@ -15,6 +15,13 @@ public class Main {
         String nick = user.getNickname();
         System.out.println(nick);
         
+        switch (iniciar.tela()) {
+            case 1: user.criarLeilao();
+                    break;
+            case 2: user.participar();
+                    break;
+            default: System.out.println("Opção inválida");
+        }
     }
     
 }
