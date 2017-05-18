@@ -1,0 +1,14 @@
+Neymar;MeioCampista;92
+Cristiano Ronaldo;Atacante;94
+Messi;MeioCampista;93
+Gareth Bale;MeioCampista;90
+Suaréz;Atacante;92
+Ibrahimovic;Atacante;90
+Robben;MeioCampista;87
+Frank Ribéry;MeioCampista;86
+Philippe Coutinho;MeioCampista;86
+Gabriel Jesus;Atacante;84
+Thiago Silva;Defensor;88
+Sergio Ramos;Defensor;90
+
+	
