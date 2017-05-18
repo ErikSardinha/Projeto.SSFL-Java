@@ -23,7 +23,7 @@ import javax.swing.JOptionPane;
     
     public void criarLeilao(){
     String c = JOptionPane.showInputDialog("Criar Leilão?");
-    Leilao leilao = new Leilao();
+    Leilao leilao = new Leilao(this);
     }
     
     /*public String getNome() {
