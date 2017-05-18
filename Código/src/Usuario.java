@@ -1,28 +1,39 @@
+
 import javax.swing.JOptionPane;
 
 
     public class Usuario {
-    private String nome;
+    //private String nome;
     private String nickname;
-    private String email;
+    //private String email;
     private double carteira;
     private Elenco elenco;
     
-    public Usuario(String nome, String nickname, String email){
-        this.nome = nome;
+    public Usuario(String nickname){
+        //this.nome = nome;
         this.nickname = nickname;
-        this.email = email;
+        //this.email = email;
     
     }
-
-    public String getNome() {
+ 
+    public void participar(){
+    String p = JOptionPane.showInputDialog("Entrar em Leilão?.");
+    System.out.println("Entrou.");
+    }
+    
+    public void criarLeilao(){
+    String c = JOptionPane.showInputDialog("Criar Leilão?");
+    Leilao leilao = new Leilao();
+    }
+    
+    /*public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    */
     public String getNickname() {
         return nickname;
     }
@@ -30,7 +41,8 @@ import javax.swing.JOptionPane;
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-
+    
+    /*
     public String getEmail() {
         return email;
     }
@@ -46,7 +58,8 @@ import javax.swing.JOptionPane;
     public void setCarteira(double carteira) {
         this.carteira = carteira;
     }
-
+    */
+    
     public Elenco getElenco() {
         return elenco;
     }

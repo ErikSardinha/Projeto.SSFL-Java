@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
 Autores: Bernard Wahba  @BennyWahba
          Erik Sardinha  @ErikSardinha
@@ -7,8 +10,10 @@ Autores: Bernard Wahba  @BennyWahba
 public class Main {
 
     public static void main(String args[]){
-    
-        
+        utils iniciar = new utils();
+        Usuario user = new Usuario(iniciar.Logar());
+        String nick = user.getNickname();
+        System.out.println(nick);
         
     }
     
