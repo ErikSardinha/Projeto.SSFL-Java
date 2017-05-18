@@ -207,7 +207,7 @@ public class Login extends javax.swing.JFrame {
 
     private void botaoEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoEntrarActionPerformed
         verificarUser(campoLogin.getText());
-        if(campoLogin.getText().equals("Textinho")){
+        if(campoLogin.getText().equals("blabla")){
             JOptionPane.showMessageDialog(null,"LOGADO");
         }
         else{

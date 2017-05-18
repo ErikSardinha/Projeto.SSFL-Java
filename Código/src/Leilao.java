@@ -39,11 +39,11 @@ public class Leilao {
     @SuppressWarnings("empty-statement")
     public void iniciarLeilao() throws FileNotFoundException, IOException{
             
-           Arquivo Controle= new Arquivo();
+        Arquivo Controle = new Arquivo();
         String arq;
-           BufferedReader br;
-        br = new BufferedReader(new FileReader(Controle.localArquivo()+"//src//Jogadores.txt"));
-           while (br.ready()){
+        BufferedReader br;
+        br = new BufferedReader(new FileReader(Controle.localArquivo()+"\\Jogadores.txt"));
+            while (br.ready()){
             String linha = br.readLine();
             String[] lista;
             lista = linha.split(";");

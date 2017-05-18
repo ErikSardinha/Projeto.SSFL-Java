@@ -1,5 +1,8 @@
 
 import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 
@@ -19,17 +22,25 @@ import javax.swing.JOptionPane;
  
     public void participar(){
     JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
-    System.out.println("Entrou.");
+    System.out.println(nickname + " Entrou.");
     }
     
     public void criarLeilao(){    
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão");
     if (c == 0){
+    String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
     Arquivo control = new Arquivo();
-    File file = new File("");
-    new File(control.localArquivo()+"\\src\\" +this.nickname).mkdir();
-    }
+    File file = new File("\\src\\Leilao.txt");
+    new File(control.localArquivo()+"\\src\\" + name).mkdir();
+    
     Leilao leilao = new Leilao(this);
+        try {
+            leilao.iniciarLeilao();
+        } catch (IOException ex) {
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    System.out.println("Leilão " + name + " iniciado." );    
+    }
     }
     
     /*public String getNome() {
