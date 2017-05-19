@@ -1,9 +1,11 @@
 
 public class Elenco {
     private Jogador[] jogador;
-
+    private int limite;
+    
     public Elenco(int limite){
-        this.jogador = new Jogador[limite];
+        this.limite = limite;
+        this.jogador = new Jogador[this.limite];
     }
 
     public Jogador[] getJogador() {
@@ -13,7 +15,22 @@ public class Elenco {
     public void setJogador(Jogador[] jogador) {
         this.jogador = jogador;
     }
+
+    public int getLimite() {
+        return limite;
+    }
+
+    public void setLimite(int limite) {
+        this.limite = limite;
+    }
     
-    
+    public boolean Cheio(){
+        for(int i=0; i<this.limite; i++){
+            if (this.jogador[i] != null){
+                return(false);
+            }
+        }
+        return true;
+    }
     
 }

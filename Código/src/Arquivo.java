@@ -1,5 +1,6 @@
 import static java.awt.SystemColor.control;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,6 +12,14 @@ import java.io.IOException;
 public class Arquivo {
     
     public Arquivo(){};
+    
+    public void Escrever(String escrever, String pasta, String arquivo) throws IOException{
+        BufferedWriter buffWrite;
+        buffWrite = new BufferedWriter(new FileWriter(pasta+"\\"+arquivo));
+        String registro = escrever;
+        buffWrite.append(registro+"\n");
+        buffWrite.close();
+    }
     
     public String Caminho(String arq){
             String path = new File(arq).getAbsolutePath();
@@ -35,11 +44,13 @@ public class Arquivo {
         }
         return false;
     }
-    public void CriarPasta(String nome) throws IOException{
-        File pasta = new File(this.Caminho("Leilao")+ nome);
-        pasta.mkdir();
-        FileWriter participantes = new FileWriter(this.Caminho(nome)+"\\participantes.bd");
-        participantes.close();
+    public void CriarArquivo(String pasta, String nome) throws IOException{
+        FileWriter arquivo = new FileWriter(this.Caminho("")+pasta+ "\\"+nome);
+        arquivo.close();
+    }
+    public void CriarPasta(String pasta, String nome) throws IOException{
+        File path = new File(this.Caminho("")+ pasta + "\\"+ nome);
+        path.mkdir();
     }
     public void DeletarPasta(String nome){
         File pasta = new File(nome);

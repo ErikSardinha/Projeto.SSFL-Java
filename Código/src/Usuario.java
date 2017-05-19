@@ -29,21 +29,16 @@ import javax.swing.JOptionPane;
         System.out.println(nickname + " Entrou.");
     }
     
-    public void criarLeilao(){    
+    public void criarLeilao() throws IOException{    
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
     if (c == 0){
         String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
         Arquivo control = new Arquivo();
-        try {
-            boolean diretorio = new File(control.Caminho("")+"\\src\\Leiloes\\"+name).mkdirs();
-            System.out.println(diretorio);
-            FileWriter arquivo = new FileWriter(new File("Arquivo.txt"));
-            arquivo.close();
+        control.CriarPasta("\\src\\Leiloes", name);
+        control.Escrever(this.nickname,control.Caminho("")+"\\src\\Leiloes","Leiloes.txt");
+        control.CriarArquivo(control.Caminho("Leiloes")+"\\"+name,"participantes.bd");
             
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Erro ao criar o diretorio");
-            System.out.println("ERRO!");
-        }
+        
     }
     int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
     if (ini == 0){
@@ -114,13 +109,9 @@ import javax.swing.JOptionPane;
         Arquivo controle=new Arquivo();
    
         try (BufferedReader br = new BufferedReader(new FileReader(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
-            
             if (!controle.Existe(br, nickname)){
-                try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
-                    String registro=this.nickname;
-                    buffWrite.append(registro+"\n");
-                    System.out.println("Novo usuário criado");
-                }
+                controle.Escrever(nickname, controle.Caminho(""),"\\src\\Usuarios.bd");
+                System.out.println("Novo usuário criado");
             }
             else{
                 System.out.println("Usuario já cadastrado");

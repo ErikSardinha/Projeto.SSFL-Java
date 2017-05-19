@@ -9,6 +9,4 @@ Frank Ribéry;MeioCampista;86
 Philippe Coutinho;MeioCampista;86
 Gabriel Jesus;Atacante;84
 Thiago Silva;Defensor;88
-Sergio Ramos;Defensor;90
-
-	
+Sergio Ramos;Defensor;90	
