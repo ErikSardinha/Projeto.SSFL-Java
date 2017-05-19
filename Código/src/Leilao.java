@@ -42,12 +42,11 @@ public class Leilao {
         Arquivo Controle = new Arquivo();
         String arq;
         BufferedReader br;
-        br = new BufferedReader(new FileReader(Controle.localArquivo()+"\\Jogadores.txt"));
+        br = new BufferedReader(new FileReader(Controle.Caminho("")+"\\Jogadores.txt"));
             while (br.ready()){
             String linha = br.readLine();
             String[] lista;
             lista = linha.split(";");
-           
            }
         /*
         int tempoAtual;

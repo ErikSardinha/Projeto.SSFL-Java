@@ -28,6 +28,7 @@ public class Jogador {
             this.posicao = Posicao.Indisponivel
         }
        */
+        this.time = "";
        
    }
     
@@ -39,11 +40,11 @@ public class Jogador {
         this.nome = nome;
     }
 
-    public int getidade() {
+    public int getIdade() {
         return idade;
     }
 
-    public void setidade(int idade) {
+    public void setIdade(int idade) {
         this.idade = idade;
     }
 
@@ -62,14 +63,12 @@ public class Jogador {
     public void setPosicao(Posicao posicao) {
         this.posicao = posicao;
     }
-
-    /*
     public String getTime() {
-        return Time;
+        return time;
     }
 
-    public void setTime(String Time) {
-        this.Time = Time;
+    public void setTime(String time) {
+        this.time = time;
     } 
-    */
+    
 }

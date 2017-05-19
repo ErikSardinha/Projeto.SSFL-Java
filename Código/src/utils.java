@@ -13,25 +13,22 @@ import javax.swing.JOptionPane;
  */
 public class utils {
     
+    public utils (){}
+    
     public String Logar(){
-    String nickname = JOptionPane.showInputDialog("Digite seu nome de usuario:");
-    while (nickname == null||nickname.equals("")){
-    nickname = JOptionPane.showInputDialog("Digite seu nome de usuario:");
-    }
-    System.out.println ("Bem vindo,");
-    return nickname;
+        String nickname = JOptionPane.showInputDialog("Digite seu nome de usuario:");
+        while (nickname == null||nickname.equals("")){
+            nickname = JOptionPane.showInputDialog("Digite seu nome de usuario:");
+        }
+        System.out.println ("Bem vindo,");
+        return nickname;
     } 
     
     public int tela(){
-    System.out.println("1 - Criar Leilão");
-    System.out.println("2 - Participar de Leilão");
-    String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
-    int selInt = Integer.parseInt(sel);
-    return selInt;
+        System.out.println("1 - Criar Leilão");
+        System.out.println("2 - Participar de Leilão");
+        String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
+        int selInt = Integer.parseInt(sel);
+        return selInt;
     }
-    
-    public utils () {
-    
-    }
-    
 }

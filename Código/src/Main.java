@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 
 /*
@@ -12,6 +11,7 @@ public class Main {
     public static void main(String args[]){
         utils iniciar = new utils();
         Usuario user = new Usuario(iniciar.Logar());
+        //registrar user
         String nick = user.getNickname();
         System.out.println(nick);
         

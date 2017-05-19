@@ -1,5 +1,6 @@
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,25 +22,34 @@ import javax.swing.JOptionPane;
     }
  
     public void participar(){
-    JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
-    System.out.println(nickname + " Entrou.");
+        JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
+        System.out.println(nickname + " Entrou.");
     }
     
     public void criarLeilao(){    
-    int c = JOptionPane.showConfirmDialog(null, "Criar Leilão");
+    int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
     if (c == 0){
-    String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
-    Arquivo control = new Arquivo();
-    File file = new File("\\src\\Leilao.txt");
-    new File(control.localArquivo()+"\\src\\" + name).mkdir();
-    
-    Leilao leilao = new Leilao(this);
+        String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
+        Arquivo control = new Arquivo();
         try {
-            leilao.iniciarLeilao();
-        } catch (IOException ex) {
-            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+            boolean diretorio = new File(control.Caminho("")+"\\src\\Leiloes\\"+name).mkdirs();
+            System.out.println(diretorio);
+            FileWriter arquivo = new FileWriter(new File("Arquivo.txt"));
+            arquivo.close();
+            
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Erro ao criar o diretorio");
+            System.out.println("ERRO!");
         }
-    System.out.println("Leilão " + name + " iniciado." );    
+    }
+    int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
+    if (ini == 0){
+        //try {
+  //          leilao.iniciarLeilao();
+      //  } catch (IOException ex){
+         //   Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
+      //  }
+        //    System.out.println("Leilão " + nameLeilao + " iniciado.");
     }
     }
     
@@ -67,7 +77,7 @@ import javax.swing.JOptionPane;
     public void setEmail(String email) {
         this.email = email;
     }
-
+    */
     public double getCarteira() {
         return carteira;
     }
@@ -75,7 +85,6 @@ import javax.swing.JOptionPane;
     public void setCarteira(double carteira) {
         this.carteira = carteira;
     }
-    */
     
     public Elenco getElenco() {
         return elenco;
@@ -96,6 +105,12 @@ import javax.swing.JOptionPane;
     }
         Lance lance = new Lance(this,valor);
         return lance;
+    }
+    
+    public void Registrar(){
+    
+        
+        
     }
     
     //@Override
