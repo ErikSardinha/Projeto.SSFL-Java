@@ -26,6 +26,15 @@ public class Arquivo {
         } 
         return(size);
     }
+    public boolean Existe(BufferedReader arq, String comparar) throws IOException{
+        while(arq.ready()){
+            String linha = arq.readLine();
+            if(comparar.equals(linha)){
+                return true;
+            }
+        }
+        return false;
+    }
     public void CriarPasta(String nome) throws IOException{
         File pasta = new File(this.Caminho("Leilao")+ nome);
         pasta.mkdir();

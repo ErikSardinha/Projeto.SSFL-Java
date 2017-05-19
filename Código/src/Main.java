@@ -1,3 +1,4 @@
+import java.io.IOException;
 import javax.swing.JOptionPane;
 
 /*
@@ -8,10 +9,10 @@ Autores: Bernard Wahba  @BennyWahba
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws IOException{
         utils iniciar = new utils();
         Usuario user = new Usuario(iniciar.Logar());
-        //registrar user
+        user.Registrar(); 
         String nick = user.getNickname();
         System.out.println(nick);
         

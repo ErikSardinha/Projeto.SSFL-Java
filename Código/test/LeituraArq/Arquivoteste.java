@@ -1,6 +1,7 @@
 package LeituraArq;
 
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,10 +17,16 @@ import javax.swing.JOptionPane;
  *
  * @author Positivo
  */
-public class Arquivo{
+public class Arquivoteste{
     
      public static void main(String[] args) throws IOException{
-        /*String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
+        String path = new File("").getAbsolutePath();
+         try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path+"\\src\\Usuarios.bd"))){
+            String linha; 
+            linha = JOptionPane.showInputDialog("Digite");
+            buffWrite.append(linha + "\n");
+        }
+         /*String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
         String path = new File("").getAbsolutePath();
         boolean diretorio = new File(path+"\\src\\Leiloes\\"+name).mkdirs();
         System.out.println(diretorio);
@@ -35,11 +42,8 @@ public class Arquivo{
         }
         System.out.println(pasta.delete());
         */
-        String path = new File("").getAbsolutePath();
-         try (FileWriter participantes = new FileWriter(path+"\\src\\participantes.bd")) {
-             System.out.println(participantes);
-         }
-        }
-         
-    
+         //try (FileWriter participantes = new FileWriter(path+"\\src\\participantes.bd")) {
+           //  System.out.println(participantes);
+         //}
+    }    
 }

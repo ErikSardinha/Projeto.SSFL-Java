@@ -1,6 +1,8 @@
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -110,18 +112,27 @@ import javax.swing.JOptionPane;
     
     public void Registrar() throws IOException{
         Arquivo controle=new Arquivo();
-       
-        try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
-            String linha=this.nickname;
-            buffWrite.append(linha+"\n");
-        }
-        
-        
+   
+        try (BufferedReader br = new BufferedReader(new FileReader(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
+            
+            if (!controle.Existe(br, nickname)){
+                try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
+                    String registro=this.nickname;
+                    buffWrite.append(registro+"\n");
+                    System.out.println("Novo usuário criado");
+                }
+            }
+            else{
+                System.out.println("Usuario já cadastrado");
+            }
+            System.out.println("Logado com sucesso");
+        } 
     }
+}
     
     //@Override
     //public String toString(){
     
     //return;
-    }
+    
 
