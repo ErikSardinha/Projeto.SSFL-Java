@@ -1,4 +1,5 @@
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -107,8 +108,13 @@ import javax.swing.JOptionPane;
         return lance;
     }
     
-    public void Registrar(){
-    
+    public void Registrar() throws IOException{
+        Arquivo controle=new Arquivo();
+       
+        try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
+            String linha=this.nickname;
+            buffWrite.append(linha+"\n");
+        }
         
         
     }
