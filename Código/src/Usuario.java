@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -60,15 +59,19 @@ import javax.swing.JOptionPane;
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
     if (c == 0){
         Arquivo control = new Arquivo();
-        String pasta = "Leilao"+this.nickname;
-        control.CriarPasta("Leiloes", pasta);
+        String pastaLeilao = "Leilao"+this.nickname;
+        control.CriarPasta("Leiloes", pastaLeilao);
         control.Escrever(this.nickname,"Leiloes","Leiloes.txt");
-        pasta = "Leiloes\\"+pasta;
-        control.CriarArquivo(pasta,"participantes.bd");
-        control.Escrever(this.nickname, pasta, "participantes.bd");
-        control.CriarPasta(pasta, "Elencos");
-        pasta = pasta+"\\Elencos";
-        control.CriarArquivo(pasta,this.nickname+"Elenco.bd");
+        pastaLeilao = "Leiloes\\"+pastaLeilao;
+        control.CriarArquivo(pastaLeilao,"participantes.bd");
+        control.Escrever(this.nickname, pastaLeilao, "participantes.bd");
+        control.CriarPasta(pastaLeilao, "Elencos");
+        String pastaElenco = pastaLeilao+"\\Elencos";
+        control.CriarArquivo(pastaElenco,this.nickname+"Elenco.bd");
+    }
+    int add = JOptionPane.showConfirmDialog(null, "Deseja adicionar participantes ao leilão?");
+    if(add == 0){
+        
     }
     int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
     if (ini == 0){

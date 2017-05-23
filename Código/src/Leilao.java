@@ -8,11 +8,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.JOptionPane;
 
 public class Leilao {
     private Usuario administrador;
     //private time duracao;
     private boolean iniciado;
+    private Usuario[] participantes;
 
     public boolean isIniciado() {
         return iniciado;
@@ -47,15 +49,24 @@ public class Leilao {
             String linha = br.readLine();
             String[] lista;
             lista = linha.split(";");
-           }
-        /*
-        int tempoAtual;
-        tempoAtual = PegarTempo;
-        while (tempoAtual < duracao){
-            this.iniciado = true;
-        }
-        this.iniciado = false
-        */
+            Jogador jogador = new Jogador(lista[])
+         }
+        
     }
-    
+    public void adicionarParticipante(String pastaLeilao) throws IOException{
+        Arquivo control = new Arquivo();
+        int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
+        if (a == 0){
+            String nome = JOptionPane.showInputDialog("Digite seu nome de usuario:");
+            control.Escrever(nome, pastaLeilao, "participantes.bd");
+        }
+    }
+    public void finalizarLeilao(){
+        int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
+        if (a == 0){
+            for(Usuario participante : participantes){
+                Elenco elenco = participante.getElenco();
+            }
+        }
+    }
 }

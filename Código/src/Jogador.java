@@ -11,7 +11,7 @@ public class Jogador {
     Goleiro, Defensor, MeioCampista, Atacante, Indisponivel;
     }
     
-   public Jogador(String nome, int idade, double valor, String posicao){
+   public Jogador(String nome, int idade, double valor/*, String posicao*/){
        
         this.nome = nome;
         this.idade = idade;
