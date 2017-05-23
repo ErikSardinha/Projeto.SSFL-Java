@@ -20,12 +20,13 @@ import javax.swing.JOptionPane;
 public class Arquivoteste{
     
      public static void main(String[] args) throws IOException{
-        String path = new File("").getAbsolutePath();
-         try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path+"\\src\\Usuarios.bd"))){
-            String linha; 
-            linha = JOptionPane.showInputDialog("Digite");
-            buffWrite.append(linha + "\n");
-        }
+        String path = new File("src").getAbsolutePath();
+        System.out.println(path);
+        //try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path+"\\src\\Usuarios.bd"))){
+            //String linha; 
+            //linha = JOptionPane.showInputDialog("Digite");
+            //buffWrite.append(linha + "\n");
+        //}
          /*String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
         String path = new File("").getAbsolutePath();
         boolean diretorio = new File(path+"\\src\\Leiloes\\"+name).mkdirs();

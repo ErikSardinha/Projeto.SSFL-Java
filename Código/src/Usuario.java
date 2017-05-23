@@ -23,7 +23,34 @@ import javax.swing.JOptionPane;
         //this.email = email;
     
     }
- 
+    
+    public Lance darLance() {
+        double valor = 0;  
+        String vl = JOptionPane.showInputDialog("Valor do lance: ");
+        try {
+            valor = Double.parseDouble(vl);
+        }
+        catch (NumberFormatException e){
+            System.out.println(" sdas ");
+        }
+        Lance lance = new Lance(this,valor);
+        return lance;
+    }
+    
+    public void Registrar() throws IOException{
+        Arquivo controle=new Arquivo();
+        FileReader fr = new FileReader(controle.Caminho("")+"\\Usuarios.bd");
+        try (BufferedReader br = new BufferedReader(fr)){
+            if (!controle.ExisteOn(br, nickname)){
+                controle.Escrever(nickname, "src","Usuarios.bd");
+                System.out.println("Novo usuário criado");
+            }
+            else{
+                System.out.println("Usuario já cadastrado");
+            }
+            System.out.println("Logado com sucesso");
+        } 
+    }
     public void participar(){
         JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
         System.out.println(nickname + " Entrou.");
@@ -32,13 +59,16 @@ import javax.swing.JOptionPane;
     public void criarLeilao() throws IOException{    
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
     if (c == 0){
-        String name = JOptionPane.showInputDialog("Digite o nome do leilão:");
         Arquivo control = new Arquivo();
-        control.CriarPasta("\\src\\Leiloes", name);
-        control.Escrever(this.nickname,control.Caminho("")+"\\src\\Leiloes","Leiloes.txt");
-        control.CriarArquivo(control.Caminho("Leiloes")+"\\"+name,"participantes.bd");
-            
-        
+        String pasta = "Leilao"+this.nickname;
+        control.CriarPasta("Leiloes", pasta);
+        control.Escrever(this.nickname,"Leiloes","Leiloes.txt");
+        pasta = "Leiloes\\"+pasta;
+        control.CriarArquivo(pasta,"participantes.bd");
+        control.Escrever(this.nickname, pasta, "participantes.bd");
+        control.CriarPasta(pasta, "Elencos");
+        pasta = pasta+"\\Elencos";
+        control.CriarArquivo(pasta,this.nickname+"Elenco.bd");
     }
     int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
     if (ini == 0){
@@ -90,34 +120,6 @@ import javax.swing.JOptionPane;
 
     public void setElenco(Elenco elenco) {
         this.elenco = elenco;
-    }
-    
-    public Lance darLance() {
-    double valor = 0;  
-    String vl = JOptionPane.showInputDialog("Valor do lance: ");
-    try {
-        valor = Double.parseDouble(vl);
-    }
-    catch (NumberFormatException e){
-    System.out.println(" sdas ");
-    }
-        Lance lance = new Lance(this,valor);
-        return lance;
-    }
-    
-    public void Registrar() throws IOException{
-        Arquivo controle=new Arquivo();
-   
-        try (BufferedReader br = new BufferedReader(new FileReader(controle.Caminho("")+"\\src\\Usuarios.bd"))) {
-            if (!controle.Existe(br, nickname)){
-                controle.Escrever(nickname, controle.Caminho(""),"\\src\\Usuarios.bd");
-                System.out.println("Novo usuário criado");
-            }
-            else{
-                System.out.println("Usuario já cadastrado");
-            }
-            System.out.println("Logado com sucesso");
-        } 
     }
 }
     
