@@ -104,9 +104,10 @@ public class Leilao {
     public void adicionarParticipante(String pastaLeilao) throws IOException{
         Arquivo control = new Arquivo();
         int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
-        if (a == 0){
+        while (a == 0){
             String nome = JOptionPane.showInputDialog("Digite seu nome de usuario:");
             control.Escrever(nome, pastaLeilao, "participantes.bd");
+            a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
         }
     }
     public int verificarParticipantes(String pastaLeilao) throws FileNotFoundException, IOException{
