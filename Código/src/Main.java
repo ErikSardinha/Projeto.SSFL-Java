@@ -16,7 +16,7 @@ public class Main {
         String nick = user.getNickname();
         System.out.println(nick);
         
-        switch (iniciar.tela()) {
+        switch (iniciar.telaIni()) {
             case 1: user.criarLeilao();
                     break;
             case 2: user.participar();

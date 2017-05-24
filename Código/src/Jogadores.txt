@@ -9,4 +9,865 @@ Frank Ribéry;MeioCampista;86
 Philippe Coutinho;MeioCampista;86
 Gabriel Jesus;Atacante;84
 Thiago Silva;Defensor;88
-Sergio Ramos;Defensor;90	
+Sergio Ramos;Defensor;90
+_______ NOVO ARQUIVO _______
+Cristiano Ronaldo
+LW ST
+31
+94
+94
+ Real Madrid CF
+2009 ~ 2021
+€87M
+€340K
+2223
+<100 Hits
+22359 Comments
+	
+	L. Messi
+RW
+29
+93
+93
+ FC Barcelona
+2004 ~ 2018
+€89M
+€340K
+2155
+<100 Hits
+21987 Comments
+	
+	Neymar
+LW
+24
+92
+94
+ FC Barcelona
+2013 ~ 2021
+€106M
+€260K
+2098
+<100 Hits
+12709 Comments
+	
+	L. Suárez
+ST
+29
+92
+92
+ FC Barcelona
+2014 ~ 2021
+€83M
+€255K
+2291
+<100 Hits
+20 Comments
+	
+	M. Neuer
+GK
+30
+92
+92
+ FC Bayern Munich
+2011 ~ 2021
+€69.5M
+€240K
+1491
+<100 Hits
+1424 Comments
+	
+	De Gea
+GK
+25
+90
+92
+ Manchester United
+2011 ~ 2019
+€68.5M
+€170K
+1421
+<100 Hits
+5879 Comments
+	
+	R. Lewandowski
+ST
+27
+90
+90
+ FC Bayern Munich
+2014 ~ 2021
+€71M
+€210K
+2122
+<100 Hits
+3006 Comments
+	
+	G. Bale
+RW
+26
+90
+90
+ Real Madrid CF
+2013 ~ 2022
+€72M
+€210K
+2266
+<100 Hits
+5369 Comments
+	
+	Z. Ibrahimović
+ST
+34
+90
+90
+ Manchester United
+2016 ~ 2017
+€36.5M
+€150K
+2117
+<100 Hits
+4576 Comments
+	
+	T. Courtois
+GK
+24
+89
+92
+ Chelsea
+2011 ~ 2019
+€65.5M
+€170K
+1282
+<100 Hits
+1438 Comments
+	
+	J. Boateng
+CB
+27
+89
+89
+ FC Bayern Munich
+2011 ~ 2021
+€50M
+€200K
+2005
+<100 Hits
+4 Comments
+	
+	E. Hazard
+LW LM
+25
+89
+90
+ Chelsea
+2012 ~ 2020
+€71.5M
+€180K
+2086
+<100 Hits
+7009 Comments
+	
+	L. Modrić
+CM CDM
+30
+89
+89
+ Real Madrid CF
+2012 ~ 2020
+€54M
+€160K
+2231
+<100 Hits
+15 Comments
+	
+	M. Özil
+CAM LW
+27
+89
+89
+ Arsenal
+2013 ~ 2018
+€62M
+€210K
+1932
+<100 Hits
+5 Comments
+	
+	G. Higuaín
+ST
+28
+89
+89
+ Juventus
+2016 ~ 2021
+€61.5M
+€210K
+1949
+<100 Hits
+3476 Comments
+	
+	Thiago Silva
+CB
+31
+89
+89
+ Paris Saint-Germain
+2012 ~ 2020
+€39.5M
+€160K
+2144
+<100 Hits
+966 Comments
+	
+	Sergio Ramos
+CB
+30
+89
+89
+ Real Madrid CF
+2005 ~ 2020
+€43.5M
+€160K
+2145
+<100 Hits
+3673 Comments
+	
+	S. Agüero
+ST
+28
+89
+89
+ Manchester City
+2011 ~ 2020
+€61.5M
+€210K
+2066
+<100 Hits
+2623 Comments
+	
+	P. Pogba
+CM CDM CAM
+23
+88
+94
+ Manchester United
+2016 ~ 2021
+€71.5M
+€150K
+2271
+<100 Hits
+14615 Comments
+	
+	A. Griezmann
+ST RW LW
+25
+88
+91
+ Atlético Madrid
+2014 ~ 2021
+€66.5M
+€160K
+2103
+<100 Hits
+3760 Comments
+	
+	K. De Bruyne
+CAM CM RM LM
+25
+88
+91
+ Manchester City
+2015 ~ 2021
+€65.5M
+€160K
+2138
+<100 Hits
+4293 Comments
+	
+	M. Reus
+LM CAM ST
+27
+88
+88
+ Borussia Dortmund
+2012 ~ 2019
+€52M
+€170K
+2165
+<100 Hits
+3541 Comments
+	
+	A. Sánchez
+ST LM RM
+27
+88
+88
+ Arsenal
+2014 ~ 2018
+€55M
+€180K
+2176
+<100 Hits
+11 Comments
+	
+	T. Kroos
+CM CDM
+26
+88
+89
+ Real Madrid CF
+2014 ~ 2022
+€59.5M
+€170K
+2108
+<100 Hits
+2409 Comments
+	
+	D. Godín
+CB
+30
+88
+88
+ Atlético Madrid
+2010 ~ 2019
+€38M
+€130K
+1932
+<100 Hits
+585 Comments
+	
+	M. Hummels
+CB
+27
+88
+88
+ FC Bayern Munich
+2016 ~ 2021
+€43M
+€170K
+2031
+<100 Hits
+2 Comments
+	
+	H. Lloris
+GK
+29
+88
+88
+ Tottenham Hotspur
+2012 ~ 2022
+€45M
+€140K
+1275
+<100 Hits
+1271 Comments
+	
+	G. Chiellini
+CB
+31
+88
+88
+ Juventus
+2005 ~ 2018
+€34M
+€140K
+1853
+<100 Hits
+670 Comments
+	
+	P. Lahm
+RB CDM CM
+32
+88
+88
+ FC Bayern Munich
+2002 ~ 2018
+€29.5M
+€140K
+2146
+<100 Hits
+765 Comments
+	
+	Pepe
+CB
+33
+88
+88
+ Real Madrid CF
+2007 ~ 2017
+€23.5M
+€100K
+1856
+<100 Hits
+683 Comments
+	
+	P. Čech
+GK
+34
+88
+88
+ Arsenal
+2015 ~ 2019
+€34M
+€100K
+1218
+<100 Hits
+1078 Comments
+	
+	G. Buffon
+GK
+38
+88
+88
+ Juventus
+2001 ~ 2018
+€9M
+€100K
+1327
+<100 Hits
+925 Comments
+	
+	Iniesta
+CM
+32
+88
+88
+ FC Barcelona
+2002 ~ 2018
+€39.5M
+€140K
+2083
+<100 Hits
+1273 Comments
+	
+	J. Oblak
+GK
+23
+87
+91
+ Atlético Madrid
+2014 ~ 2021
+€50.5M
+€120K
+1287
+<100 Hits
+659 Comments
+	
+	J. Rodríguez
+CAM CM RM
+24
+87
+92
+ Real Madrid CF
+2014 ~ 2020
+€61M
+€150K
+2117
+<100 Hits
+5824 Comments
+	
+	P. Aubameyang
+ST
+27
+87
+88
+ Borussia Dortmund
+2013 ~ 2020
+€52M
+€160K
+2080
+<100 Hits
+2826 Comments
+	
+	L. Bonucci
+CB
+29
+87
+87
+ Juventus
+2010 ~ 2021
+€34M
+€120K
+1990
+<100 Hits
+4 Comments
+	
+	A. Vidal
+CM CDM
+29
+87
+87
+ FC Bayern Munich
+2015 ~ 2019
+€41.5M
+€130K
+2285
+<100 Hits
+1625 Comments
+	
+	I. Rakitić
+CM
+28
+87
+87
+ FC Barcelona
+2014 ~ 2021
+€43.5M
+€160K
+2136
+<100 Hits
+931 Comments
+	
+	David Silva
+CAM CM LM
+30
+87
+87
+ Manchester City
+2010 ~ 2019
+€41.5M
+€140K
+1975
+<100 Hits
+926 Comments
+	
+	S. Handanovič
+GK
+31
+87
+87
+ Inter
+2012 ~ 2019
+€35.5M
+€120K
+1264
+<100 Hits
+440 Comments
+	
+	Piqué
+CB
+29
+87
+87
+ FC Barcelona
+2008 ~ 2019
+€34M
+€130K
+1980
+<100 Hits
+1227 Comments
+	
+	A. Robben
+RM RW
+32
+87
+87
+ FC Bayern Munich
+2009 ~ 2018
+€34M
+€130K
+2077
+<100 Hits
+1904 Comments
+	
+	P. Dybala
+ST CAM
+22
+86
+93
+ Juventus
+2015 ~ 2022
+€56.5M
+€120K
+2063
+<100 Hits
+9731 Comments
+	
+	M. Verratti
+CM CDM
+23
+86
+90
+ Paris Saint-Germain
+2012 ~ 2021
+€50.5M
+€120K
+2151
+<100 Hits
+3720 Comments
+	
+	D. Alaba
+LB CB CM
+24
+86
+89
+ FC Bayern Munich
+2010 ~ 2021
+€41.5M
+€140K
+2279
+<100 Hits
+1622 Comments
+	
+	H. Mkhitaryan
+RM LM CAM
+27
+86
+86
+ Manchester United
+2016 ~ 2020
+€39M
+€150K
+2159
+<100 Hits
+1813 Comments
+	
+	B. Leno
+GK
+24
+86
+89
+ Bayer 04 Leverkusen
+2012 ~ 2018
+€42.5M
+€120K
+1250
+<100 Hits
+628 Comments
+	
+	C. Eriksen
+CAM RM LM
+24
+86
+90
+ Tottenham Hotspur
+2013 ~ 2020
+€52M
+€130K
+2049
+<100 Hits
+3023 Comments
+	
+T. Müller;CF;86;45.5M
+Sergio Busquets
+CDM
+86
+36M
+Thiago
+CM
+86
+88
+ FC Bayern Munich
+2013 ~ 2021
+€46M
+€120K
+2171
+<100 Hits
+1518 Comments
+	
+	Jordi Alba
+LB
+27
+86
+86
+ FC Barcelona
+2012 ~ 2020
+€31.5M
+€150K
+2214
+<100 Hits
+571 Comments
+	
+	Coutinho
+LW LM CAM
+24
+86
+90
+ Liverpool
+2013 ~ 2022
+€52M
+€130K
+2041
+<100 Hits
+4213 Comments
+	
+	A. Di María
+RW CM CAM
+28
+86
+86
+ Paris Saint-Germain
+2015 ~ 2019
+€39M
+€170K
+2144
+<100 Hits
+1 Comments
+	
+	Diego Costa
+ST
+27
+86
+86
+ Chelsea
+2014 ~ 2019
+€41M
+€170K
+1992
+<100 Hits
+2 Comments
+	
+	E. Cavani
+ST
+29
+86
+86
+ Paris Saint-Germain
+2013 ~ 2018
+€38.5M
+€140K
+2086
+<100 Hits
+8 Comments
+	
+	R. Nainggolan
+CM CAM
+28
+86
+86
+ Roma
+2014 ~ 2020
+€37.5M
+€150K
+2290
+<100 Hits
+5 Comments
+	
+	Marcelo
+LB
+28
+86
+86
+ Real Madrid CF
+2007 ~ 2020
+€30M
+€160K
+2201
+<100 Hits
+3 Comments
+	
+	C. Marchisio
+CM CDM
+30
+86
+86
+ Juventus
+2007 ~ 2020
+€35M
+€120K
+2218
+<100 Hits
+451 Comments
+	
+	M. Hamšik
+CM
+28
+86
+86
+ Napoli
+2007 ~ 2020
+€37.5M
+€150K
+2171
+<100 Hits
+420 Comments
+	
+	Miranda L
+CB
+31
+86
+86
+ Inter
+Jun 30, 2017 (Atlético Madrid)
+€25.5M
+€120K
+1878
+<100 Hits
+266 Comments
+	
+	K. Benzema
+ST
+28
+86
+86
+ Real Madrid CF
+2009 ~ 2019
+€39.5M
+€170K
+1954
+<100 Hits
+1824 Comments
+	
+	Cesc Fàbregas
+CM CDM CAM
+29
+86
+86
+ Chelsea
+2014 ~ 2019
+€36M
+€130K
+2118
+<100 Hits
+1181 Comments
+	
+	F. Ribéry
+LM LW
+33
+86
+86
+ FC Bayern Munich
+2007 ~ 2018
+€24M
+€100K
+1979
+<100 Hits
+471 Comments
+	
+	V. Kompany
+CB
+30
+86
+86
+ Manchester City
+2008 ~ 2019
+€28M
+€130K
+1919
+<100 Hits
+679 Comments
+	
+	A. Barzagli
+CB
+35
+86
+86
+ Juventus
+2011 ~ 2018
+€6.5M
+€80K
+1800
+<100 H	
+H. Kane;ST;85;46M	
+Isco;CM;85;43M
+Lacazette;ST;85;42M	
+K. Navas;GK;85;28.5M
+Lukaku;ST;85;46M
+Gündoğan;CM;25;85;39M	
+Alderweireld;CB;85;€31M
+Willian;RM;85;€33M
+M. Pjanić;CM;85;37.5M
+Juan Mata;CAM;85;33M
+Javi Martinez;CB;85;31M	
+Payet;LM;85;31M	
+Mertens;LW;85;31M	

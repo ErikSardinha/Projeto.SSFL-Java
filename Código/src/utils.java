@@ -33,7 +33,7 @@ public class utils {
     }
     public int telaLeilao(){
         System.out.println("1 - Adicionar Participante(s)");
-        System.out.println("2 - Participar de Leilão");
+        System.out.println("2 - Iniciar Leilao");
         String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
         int selInt = Integer.parseInt(sel);
         return selInt;

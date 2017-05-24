@@ -70,7 +70,6 @@ import javax.swing.JOptionPane;
         control.CriarArquivo(pastaElenco,this.nickname+"Elenco.bd");
         JOptionPane.showMessageDialog(null, "Leilão criado com Sucesso!");
     }
-    
     int add = JOptionPane.showConfirmDialog(null, "Deseja adicionar participantes ao leilão?");
     if(add == 0){
         
