@@ -74,10 +74,20 @@ public class Leilao {
                             System.out.println(number +"-"+ jogadores[atual+j]);
                         }
                         int a = JOptionPane.showConfirmDialog(null, "Ver outros jogadores?");
-                        if(a==0){
-                            atual = atual+10;
+                        if(a==0){  
                             n = n+10;
                         }
+                        atual = atual+10;
+                    }
+                }
+                int l = JOptionPane.showConfirmDialog(null, "Deseja dar um lance?");
+                if(l==0){
+                    String jog = JOptionPane.showInputDialog("Digite a posição do jogador");
+                    int joga = u.converterI(jog);
+                    if(joga<=jogadores.length && joga>=0 ){
+                        Jogador jogadorA = jogadores[joga];
+                        Lance lanceAtual = jogadorA.getMaiorLance();
+                        jogadorA.setMaiorLance(participante.darLance(lanceAtual.getValor()));
                     }
                 }
             }
@@ -98,7 +108,7 @@ public class Leilao {
         return nParticipantes;
     }
     public void finalizarLeilao(){
-        int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
+        int a = JOptionPane.showConfirmDialog(null, "Finalizar leilao?");
         if (a == 0){
             for(Usuario participante : participantes){
                 Elenco elenco = participante.getElenco();

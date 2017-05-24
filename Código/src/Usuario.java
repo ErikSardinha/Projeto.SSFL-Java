@@ -23,14 +23,20 @@ import javax.swing.JOptionPane;
     
     }
     
-    public Lance darLance() {
-        double valor = 0;  
+    public Lance darLance(double valorAtual) {
+        double valor = valorAtual+1000;
         String vl = JOptionPane.showInputDialog("Valor do lance: ");
         try {
-            valor = Double.parseDouble(vl);
+            double valorDado = Double.parseDouble(vl);
+            if(valorDado >= valor){
+                valor = valorDado;
+            }
+            else{
+                System.out.println(" Valor invalido, substituido pelo valor atual + 1000");
+            }
         }
         catch (NumberFormatException e){
-            System.out.println(" sdas ");
+            System.out.println(" Valor invalido, substituido pelo valor atual + 1000");
         }
         Lance lance = new Lance(this,valor);
         return lance;
