@@ -1,4 +1,4 @@
-Neymar;MeioCampista;92
+Neymar;MeioCampista;92;
 Cristiano Ronaldo;Atacante;94
 Messi;MeioCampista;93
 Gareth Bale;MeioCampista;90

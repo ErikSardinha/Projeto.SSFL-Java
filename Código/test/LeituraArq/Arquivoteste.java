@@ -20,8 +20,15 @@ import javax.swing.JOptionPane;
 public class Arquivoteste{
     
      public static void main(String[] args) throws IOException{
-        String path = new File("src").getAbsolutePath();
-        System.out.println(path);
+        String s = ",g.kj";
+        if (s.contains(",")||s.contains(".")){
+            System.out.println("Existe");
+        }
+        else{
+            System.out.println("Não existe");
+        }
+        //String path = new File("src").getAbsolutePath();
+        //System.out.println(path);
         //try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path+"\\src\\Usuarios.bd"))){
             //String linha; 
             //linha = JOptionPane.showInputDialog("Digite");

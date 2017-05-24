@@ -24,11 +24,27 @@ public class utils {
         return nickname;
     } 
     
-    public int tela(){
+    public int telaIni(){
         System.out.println("1 - Criar Leilão");
         System.out.println("2 - Participar de Leilão");
         String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
         int selInt = Integer.parseInt(sel);
         return selInt;
+    }
+    public int telaLeilao(){
+        System.out.println("1 - Adicionar Participante(s)");
+        System.out.println("2 - Participar de Leilão");
+        String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
+        int selInt = Integer.parseInt(sel);
+        return selInt;
+    }
+    public Double converterD(String valor){
+        valor = valor.replace(",", ".");
+        Double valorDouble = Double.parseDouble(valor);
+        return valorDouble;
+    }
+    public int converterI(String valor){
+        int valorInt = Integer.parseInt(valor);
+        return valorInt;
     }
 }

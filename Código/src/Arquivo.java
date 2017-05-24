@@ -48,9 +48,9 @@ public class Arquivo {
         String path = new File("src\\"+arq).getAbsolutePath();
         return(path);
     }
-    public int Tamanho(String arq) throws IOException{
+    public int Tamanho(FileReader arq) throws IOException{
         int size = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader(arq))) {
+        try (BufferedReader br = new BufferedReader(arq)) {
             while(br.ready()){
                 String linha = br.readLine();
                 size = size + 1;    

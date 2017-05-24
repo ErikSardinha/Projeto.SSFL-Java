@@ -68,7 +68,9 @@ import javax.swing.JOptionPane;
         control.CriarPasta(pastaLeilao, "Elencos");
         String pastaElenco = pastaLeilao+"\\Elencos";
         control.CriarArquivo(pastaElenco,this.nickname+"Elenco.bd");
+        JOptionPane.showMessageDialog(null, "Leilão criado com Sucesso!");
     }
+    
     int add = JOptionPane.showConfirmDialog(null, "Deseja adicionar participantes ao leilão?");
     if(add == 0){
         
