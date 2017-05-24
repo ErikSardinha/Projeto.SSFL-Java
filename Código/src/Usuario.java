@@ -56,8 +56,12 @@ import javax.swing.JOptionPane;
         } 
     }
     public void participar(){
-        JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
-        System.out.println(nickname + " Entrou.");
+        int b = JOptionPane.showConfirmDialog(null,"Entrar em Leilão?");
+        if(b == 0){
+        String nl = JOptionPane.showInputDialog(null,"Digite o nome do Leilão: ");
+        System.out.println(nickname + " Entrou em " +nl);
+        }
+        
     }
     
     public void criarLeilao() throws IOException{    

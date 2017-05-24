@@ -17,10 +17,10 @@ public class Arquivo {
     
     public Arquivo(){};
     
-    public void Escrever(String escrever, String pasta, String arquivo) throws IOException{
+    public static void Escrever(String escrever, String pasta, String arquivo) throws IOException{
         FileReader fr = new FileReader(Caminho(pasta)+"\\"+arquivo);
         BufferedReader br = new BufferedReader(fr);
-        boolean esc = false;
+        boolean esc;
         if(!ExisteOn(br,escrever)){
             esc = true;
         }
@@ -40,7 +40,7 @@ public class Arquivo {
         }
     }
     
-    public String Caminho(String arq){
+    public static String Caminho(String arq){
         if (arq.equals("src")||arq.equals("")){    
             String path = new File("src").getAbsolutePath();
             return(path);
@@ -48,7 +48,7 @@ public class Arquivo {
         String path = new File("src\\"+arq).getAbsolutePath();
         return(path);
     }
-    public int Tamanho(FileReader arq) throws IOException{
+    public static int Tamanho(FileReader arq) throws IOException{
         int size = 0;
         try (BufferedReader br = new BufferedReader(arq)) {
             while(br.ready()){
@@ -58,7 +58,7 @@ public class Arquivo {
         } 
         return(size);
     }
-    public boolean ExisteOn(BufferedReader arq, String comparar) throws IOException{
+    public static boolean ExisteOn(BufferedReader arq, String comparar) throws IOException{
         while(arq.ready()){
             String linha = arq.readLine();
             if(comparar.equals(linha)){
@@ -67,7 +67,7 @@ public class Arquivo {
         }
         return false;
     }
-    public void CriarArquivo(String pasta, String nome) throws IOException{
+    public static void CriarArquivo(String pasta, String nome) throws IOException{
         File file = new File(Caminho(pasta)+"\\"+nome);
         if(!file.exists()){
             FileWriter arquivo = new FileWriter(Caminho(pasta)+"\\"+nome);
@@ -78,14 +78,14 @@ public class Arquivo {
         }
     }
       
-    public void CriarPasta(String pasta, String nome) throws IOException{
+    public static void CriarPasta(String pasta, String nome) throws IOException{
         File file = new File(Caminho(pasta)+"\\"+ nome);
         if(!file.isDirectory()){
             File path = new File(Caminho(pasta)+"\\"+ nome);
             path.mkdir();
         }
     }
-    public void DeletarPasta(String pasta){
+    public static void DeletarPasta(String pasta){
         File file = new File(pasta);
         if(!file.isDirectory()){
             file.delete();

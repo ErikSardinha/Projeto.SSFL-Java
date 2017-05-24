@@ -99,7 +99,7 @@ public class Leilao {
     }
     public void adicionarParticipante(String pastaLeilao) throws IOException{
         int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
-        if (a == 0){
+        while (a == 0){
             String nome = JOptionPane.showInputDialog("Digite seu nome de usuario:");
             Arquivo.Escrever(nome, pastaLeilao, "participantes.bd");
         }
