@@ -2,36 +2,35 @@
 public class Jogador {
 
     private String nome;
+    private String posicao;
     private int qualidade;
     private double valor;
-    private Posicao posicao;
-    private String time;
     private Lance maiorLance;
+    private boolean disponibilidade;
 
-    public enum Posicao {
-        Goleiro, Defensor, MeioCampista, Atacante, Indisponivel;
-    }
-
-    public Jogador(String nome, String qualidade, String valor/*, String posicao*/) {
+    public Jogador(String nome, String posicao, String qualidade, String valor) {
         utils u = new utils();
         this.nome = nome;
+        this.posicao = posicao;
         this.qualidade = u.converterI(qualidade);
         this.valor = u.converterD(valor);
-        /* Teste de Verificação se a posição existe
-        boolean existe = false
-        while existe(false){
-            if (posicao.equals(Posicao)){
-                existe = true;
-                this.posicao = Posicao.posicao;
-            }
-        }
-        if (existe == false){
-            this.posicao = Posicao.Indisponivel
-        }
-         */
-        this.time = "";
+        this.maiorLance = null;
+        this.disponibilidade = true;
     }
-
+    
+    @Override
+    public String toString(){
+        String disp;
+        if(this.isDisponibilidade()){
+            disp = "Disponivel";
+        }
+        else{
+            disp = "Não disponível";
+        }
+        String jogador = ("Nome: "+ nome +"/n Posição"+ posicao+"/n Qualidade: "+qualidade+"/n Valor estimado: "+valor+"/n Disponibilidade: "+disp+"/n Maior Lance: "+maiorLance);
+        return jogador;
+    }
+    
     public Lance getMaiorLance() {
         return maiorLance;
     }
@@ -64,20 +63,20 @@ public class Jogador {
         this.qualidade = qualidade;
     }
 
-    public Posicao getPosicao() {
+    public String getPosicao() {
         return posicao;
     }
 
-    public void setPosicao(Posicao posicao) {
+    public void setPosicao(String posicao) {
         this.posicao = posicao;
     }
 
-    public String getTime() {
-        return time;
+    public boolean isDisponibilidade() {
+        return disponibilidade;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setDisponibilidade(boolean disponibilidade) {
+        this.disponibilidade = disponibilidade;
     }
-
+    
 }

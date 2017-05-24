@@ -11,30 +11,77 @@ import java.util.TimerTask;
 import javax.swing.JOptionPane;
 
 public class Leilao {
-    private Usuario administrador;
+    private Usuario admin;
     //private time duracao;
     private Usuario[] participantes;
     private Jogador[] jogadores;
 
-    public Leilao(Usuario nome){
-        this.administrador = nome;
+    public Leilao(Usuario user){
+        this.admin = user;
         //this.duração = duracao;
     }
     
-    public void iniciarLeilao() throws FileNotFoundException, IOException{
-        
-        Arquivo control = new Arquivo();
-        String arq;
-        FileReader fr = new FileReader(control.Caminho("")+"\\Jogadores.txt");
-        int tamanho = control.Tamanho(fr);
-        BufferedReader br;
-        br = new BufferedReader(fr);
-            while (br.ready()){
-            String linha = br.readLine();
-            String[] lista;
-            lista = linha.split(";");
-           // this.jogadores = new Jogador(lista[0],lista[1],lista);
-         }
+    public void confInicioLeilao() throws FileNotFoundException, IOException{
+        int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
+        if (ini == 0){
+            Arquivo control = new Arquivo();
+            FileReader arqJogadores = new FileReader(control.Caminho("")+"\\Jogadores.txt");
+            int totalJ = control.Tamanho(arqJogadores);
+            this.jogadores = new Jogador[totalJ];
+            BufferedReader arqJogador = new BufferedReader(arqJogadores);
+            int n = 0;
+            while (arqJogador.ready()){
+                String linha = arqJogador.readLine();
+                String[] lista;
+                lista = linha.split(";");
+                Jogador jogador = new Jogador(lista[0],lista[1],lista[2], lista[3]);
+                this.jogadores[n] = jogador;
+                n = n+1;
+            }
+            FileReader arqParticipantes = new FileReader(control.Caminho("Leilao")+admin+"\\participantes.bd");
+            int totalP = control.Tamanho(arqParticipantes);
+            if(totalP>1){
+                this.participantes = new Usuario[totalP];
+                BufferedReader arqParticipante = new BufferedReader(arqParticipantes);
+                int nP = 0;
+                while (arqParticipante.ready()){
+                String nome = arqParticipante.readLine();
+                Usuario user = new Usuario(nome);
+                this.participantes[nP] = user;
+                nP = nP+1;
+                }
+            }
+            else{
+                System.out.println("você precisa adicionar mais participantes para iniciar esse leilão");
+                adicionarParticipante(control.Caminho("Leiloes\\Leilao"+admin.getNickname()));
+                confInicioLeilao();
+            }
+            iniciarLeilao();
+        }
+    }
+    public void iniciarLeilao(){
+        utils u = new utils();
+        boolean iniciado = true;
+        while(iniciado = true){
+            for(Usuario participante : participantes){
+                System.out.println("Vez do participante: "+ participante.getNickname());
+                for(int i = 0; i <= jogadores.length; i++){
+                    int atual = 0;
+                    int n = 10;
+                    while(atual<n){
+                        for(int j = 0; j<10; j++){
+                            String number = u.converterItoS(atual+j);
+                            System.out.println(number +"-"+ jogadores[atual+j]);
+                        }
+                        int a = JOptionPane.showConfirmDialog(null, "Ver outros jogadores?");
+                        if(a==0){
+                            atual = atual+10;
+                            n = n+10;
+                        }
+                    }
+                }
+            }
+        }
     }
     public void adicionarParticipante(String pastaLeilao) throws IOException{
         Arquivo control = new Arquivo();
@@ -59,8 +106,8 @@ public class Leilao {
         }
     }
     
-    public Usuario getAdministrador() {
-        return administrador;
+    public Usuario getAdmin() {
+        return admin;
     }
 
     public Usuario[] getParticipantes() {
@@ -79,7 +126,7 @@ public class Leilao {
         this.jogadores = jogadores;
     }
     
-    public void setAdministrador(Usuario administrador) {
-        this.administrador = administrador;
+    public void setAdmin(Usuario admin) {
+        this.admin = admin;
     }
 }

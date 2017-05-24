@@ -57,9 +57,9 @@ import javax.swing.JOptionPane;
     
     public void criarLeilao() throws IOException{    
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
+    String pastaLeilao = "Leilao"+this.nickname;
     if (c == 0){
         Arquivo control = new Arquivo();
-        String pastaLeilao = "Leilao"+this.nickname;
         control.CriarPasta("Leiloes", pastaLeilao);
         control.Escrever(this.nickname,"Leiloes","Leiloes.txt");
         pastaLeilao = "Leiloes\\"+pastaLeilao;
@@ -70,29 +70,16 @@ import javax.swing.JOptionPane;
         control.CriarArquivo(pastaElenco,this.nickname+"Elenco.bd");
         JOptionPane.showMessageDialog(null, "Leilão criado com Sucesso!");
     }
-    int add = JOptionPane.showConfirmDialog(null, "Deseja adicionar participantes ao leilão?");
-    if(add == 0){
-        
+    Leilao leilao = new Leilao(this);
+    utils util = new utils();
+    switch (util.telaLeilao()) {
+            case 1: leilao.adicionarParticipante(pastaLeilao);
+                    break;
+            case 2: leilao.confInicioLeilao();
+                    break;
+            default: System.out.println("Opção inválida");
+        }
     }
-    int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
-    if (ini == 0){
-        //try {
-  //          leilao.iniciarLeilao();
-      //  } catch (IOException ex){
-         //   Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
-      //  }
-        //    System.out.println("Leilão " + nameLeilao + " iniciado.");
-    }
-    }
-    
-    /*public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    */
     public String getNickname() {
         return nickname;
     }

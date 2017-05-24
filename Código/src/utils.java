@@ -38,7 +38,15 @@ public class utils {
         int selInt = Integer.parseInt(sel);
         return selInt;
     }
+    public int telaPrincipal(){
+        System.out.println("1 - Adicionar Participante(s)");
+        System.out.println("2 - Iniciar Leilao");
+        String sel = JOptionPane.showInputDialog("Selecione o numero da opção desejada:");
+        int selInt = Integer.parseInt(sel);
+        return selInt;
+    }
     public Double converterD(String valor){
+        valor = valor.replace("M","000");
         valor = valor.replace(",", ".");
         Double valorDouble = Double.parseDouble(valor);
         return valorDouble;
@@ -46,5 +54,13 @@ public class utils {
     public int converterI(String valor){
         int valorInt = Integer.parseInt(valor);
         return valorInt;
+    }
+    public String converterItoS(int valor){
+        String string = Integer.toString(valor);
+        return (string);
+    }
+    public String converterDtoS(double valor){
+        String string = Double.toString(valor);
+        return (string);
     }
 }
