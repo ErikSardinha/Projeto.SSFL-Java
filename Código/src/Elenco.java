@@ -24,6 +24,15 @@ public class Elenco {
         this.limite = limite;
     }
     
+    public void addJogadorAoElenco(){
+    /*Para add jogadores terminar "Darlance()" 
+        for (Jogador jogador[]: jogadores){
+        if (jogador == null){
+        jogador[] = jogadorComprado(); 
+        }
+        }*/
+    }
+    
     public boolean Cheio(){
         for(int i=0; i<this.limite; i++){
             if (this.jogador[i] != null){
