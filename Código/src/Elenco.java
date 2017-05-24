@@ -24,7 +24,7 @@ public class Elenco {
         this.limite = limite;
     }
     
-    public void addJogadorAoElenco(){
+    public void addJogadorAoElenco(Jogador jogador){
     /*Para add jogadores terminar "Darlance()" 
         for (Jogador jogador[]: jogadores){
         if (jogador == null){

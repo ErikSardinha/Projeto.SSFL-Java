@@ -91,7 +91,15 @@ public class Leilao {
                     }
                 }
             }
+        int t = JOptionPane.showConfirmDialog(null, "Ir para proximo turno(Sim) ou finalizar(Não)?");
+            if(t==0){
+                iniciado = true;
+            }
+            if(t==1){
+                iniciado = false;
+            }
         }
+        finalizarLeilao();
     }
     public void adicionarParticipante(String pastaLeilao) throws IOException{
         Arquivo control = new Arquivo();
@@ -112,8 +120,15 @@ public class Leilao {
         if (a == 0){
             for(Usuario participante : participantes){
                 Elenco elenco = participante.getElenco();
+                for(Jogador jogador : this.jogadores){
+                    Lance dono = jogador.getMaiorLance();
+                    if (dono.getUsuario().equals(participante)){
+                        elenco.addJogadorAoElenco(jogador);
+                    }
+                }
             }
         }
+        
     }
     
     public Usuario getAdmin() {
