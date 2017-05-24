@@ -12,21 +12,18 @@ import javax.swing.JOptionPane;
 
 public class Leilao {
     private Usuario admin;
-    //private time duracao;
     private Usuario[] participantes;
     private Jogador[] jogadores;
 
     public Leilao(Usuario user){
         this.admin = user;
-        //this.duração = duracao;
     }
     
     public void confInicioLeilao() throws FileNotFoundException, IOException{
         int ini = JOptionPane.showConfirmDialog(null, "Deseja iniciar o leilão?");
         if (ini == 0){
-            Arquivo control = new Arquivo();
-            FileReader arqJogadores = new FileReader(control.Caminho("")+"\\Jogadores.txt");
-            int totalJ = control.Tamanho(arqJogadores);
+            FileReader arqJogadores = new FileReader(Arquivo.Caminho("")+"\\Jogadores.txt");
+            int totalJ = Arquivo.Tamanho(arqJogadores);
             this.jogadores = new Jogador[totalJ];
             BufferedReader arqJogador = new BufferedReader(arqJogadores);
             int n = 0;
@@ -38,8 +35,8 @@ public class Leilao {
                 this.jogadores[n] = jogador;
                 n = n+1;
             }
-            FileReader arqParticipantes = new FileReader(control.Caminho("Leilao")+admin+"\\participantes.bd");
-            int totalP = control.Tamanho(arqParticipantes);
+            FileReader arqParticipantes = new FileReader(Arquivo.Caminho("Leilao")+admin+"\\participantes.bd");
+            int totalP = Arquivo.Tamanho(arqParticipantes);
             if(totalP>1){
                 this.participantes = new Usuario[totalP];
                 BufferedReader arqParticipante = new BufferedReader(arqParticipantes);
@@ -53,14 +50,13 @@ public class Leilao {
             }
             else{
                 System.out.println("você precisa adicionar mais participantes para iniciar esse leilão");
-                adicionarParticipante(control.Caminho("Leiloes\\Leilao"+admin.getNickname()));
+                adicionarParticipante(Arquivo.Caminho("Leiloes\\Leilao"+admin.getNickname()));
                 confInicioLeilao();
             }
             iniciarLeilao();
         }
     }
     public void iniciarLeilao(){
-        utils u = new utils();
         boolean iniciado = true;
         while(iniciado = true){
             for(Usuario participante : participantes){
@@ -70,7 +66,7 @@ public class Leilao {
                     int n = 10;
                     while(atual<n){
                         for(int j = 0; j<10; j++){
-                            String number = u.converterItoS(atual+j);
+                            String number = utils.converterItoS(atual+j);
                             System.out.println(number +"-"+ jogadores[atual+j]);
                         }
                         int a = JOptionPane.showConfirmDialog(null, "Ver outros jogadores?");
@@ -83,7 +79,7 @@ public class Leilao {
                 int l = JOptionPane.showConfirmDialog(null, "Deseja dar um lance?");
                 if(l==0){
                     String jog = JOptionPane.showInputDialog("Digite a posição do jogador");
-                    int joga = u.converterI(jog);
+                    int joga = utils.converterI(jog);
                     if(joga<=jogadores.length && joga>=0 ){
                         Jogador jogadorA = jogadores[joga];
                         Lance lanceAtual = jogadorA.getMaiorLance();
@@ -102,17 +98,15 @@ public class Leilao {
         finalizarLeilao();
     }
     public void adicionarParticipante(String pastaLeilao) throws IOException{
-        Arquivo control = new Arquivo();
         int a = JOptionPane.showConfirmDialog(null, "Adicionar participante?");
         if (a == 0){
             String nome = JOptionPane.showInputDialog("Digite seu nome de usuario:");
-            control.Escrever(nome, pastaLeilao, "participantes.bd");
+            Arquivo.Escrever(nome, pastaLeilao, "participantes.bd");
         }
     }
     public int verificarParticipantes(String pastaLeilao) throws FileNotFoundException, IOException{
-        Arquivo control = new Arquivo();
-        FileReader arq = new FileReader(control.Caminho(pastaLeilao)+"\\participantes.bd");
-        int nParticipantes = control.Tamanho(arq);
+        FileReader arq = new FileReader(Arquivo.Caminho(pastaLeilao)+"\\participantes.bd");
+        int nParticipantes = Arquivo.Tamanho(arq);
         return nParticipantes;
     }
     public void finalizarLeilao(){

@@ -43,11 +43,10 @@ import javax.swing.JOptionPane;
     }
     
     public void Registrar() throws IOException{
-        Arquivo controle=new Arquivo();
-        FileReader fr = new FileReader(controle.Caminho("")+"\\Usuarios.bd");
+        FileReader fr = new FileReader(Arquivo.Caminho("")+"\\Usuarios.bd");
         try (BufferedReader br = new BufferedReader(fr)){
-            if (!controle.ExisteOn(br, nickname)){
-                controle.Escrever(nickname, "src","Usuarios.bd");
+            if (!Arquivo.ExisteOn(br, nickname)){
+                Arquivo.Escrever(nickname, "src","Usuarios.bd");
                 System.out.println("Novo usuário criado");
             }
             else{
@@ -65,20 +64,18 @@ import javax.swing.JOptionPane;
     int c = JOptionPane.showConfirmDialog(null, "Criar Leilão?");
     String pastaLeilao = "Leilao"+this.nickname;
     if (c == 0){
-        Arquivo control = new Arquivo();
-        control.CriarPasta("Leiloes", pastaLeilao);
-        control.Escrever(this.nickname,"Leiloes","Leiloes.txt");
+        Arquivo.CriarPasta("Leiloes", pastaLeilao);
+        Arquivo.Escrever(this.nickname,"Leiloes","Leiloes.txt");
         pastaLeilao = "Leiloes\\"+pastaLeilao;
-        control.CriarArquivo(pastaLeilao,"participantes.bd");
-        control.Escrever(this.nickname, pastaLeilao, "participantes.bd");
-        control.CriarPasta(pastaLeilao, "Elencos");
+        Arquivo.CriarArquivo(pastaLeilao,"participantes.bd");
+        Arquivo.Escrever(this.nickname, pastaLeilao, "participantes.bd");
+        Arquivo.CriarPasta(pastaLeilao, "Elencos");
         String pastaElenco = pastaLeilao+"\\Elencos";
-        control.CriarArquivo(pastaElenco,this.nickname+"Elenco.bd");
+        Elenco.criarArquivoElenco(pastaElenco, nickname);
         JOptionPane.showMessageDialog(null, "Leilão criado com Sucesso!");
     }
     Leilao leilao = new Leilao(this);
-    utils util = new utils();
-    switch (util.telaLeilao()) {
+    switch (Main.telaLeilao()) {
             case 1: leilao.adicionarParticipante(pastaLeilao);
                     break;
             case 2: leilao.confInicioLeilao();
@@ -93,16 +90,7 @@ import javax.swing.JOptionPane;
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-    
-    /*
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    */
+ 
     public double getCarteira() {
         return carteira;
     }
