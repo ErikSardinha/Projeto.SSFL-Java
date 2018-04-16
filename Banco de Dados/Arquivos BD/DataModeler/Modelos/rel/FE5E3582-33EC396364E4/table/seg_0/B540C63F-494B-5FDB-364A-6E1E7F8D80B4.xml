@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B540C63F-494B-5FDB-364A-6E1E7F8D80B4" name="Times">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>E89EFE0D-1FC9-71DE-5B6C-8D4186CFB30D</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nomeTime" id="8AFF0518-0A25-526E-106B-8A632C306652">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>3BAC15EB-3F65-D73F-50A8-E2CD9F7DAF23</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apelidoTime" id="D0544EC9-CFEF-D2D8-9459-69209E888B27">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>573DF887-6839-25A9-6284-E15CCDA71175</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59DFD6C9-94CD-0866-DDD4-28CBE09EF1D9" name="Times_PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>460B646E-20BC-492A-F730-C084089DF616</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AFF0518-0A25-526E-106B-8A632C306652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

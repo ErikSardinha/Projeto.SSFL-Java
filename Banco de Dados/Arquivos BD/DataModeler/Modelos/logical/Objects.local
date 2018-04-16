@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="DBF33551-9381-3A05-2A76-76B27AB500BE" name="Clientes" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FF7AF74F-440E-6E15-B7E9-0A74A3A71C7B" name="Elenco" seqName="seg_0"/>
+   <object objectType="Entity" objectID="CCC10207-AC74-1892-E942-C30DA3A95382" name="Jogadores" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2E99AE8A-0390-D8C5-00C0-B2062C6B4320" name="JogadoresLeilao" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6E207D40-9CDF-F292-50D4-427320F9165C" name="Leiloes" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E89EFE0D-1FC9-71DE-5B6C-8D4186CFB30D" name="Times" seqName="seg_0"/>
+   <object objectType="Entity" objectID="98EB79ED-6048-293D-1873-2E92E3B86391" name="TimesLeilao" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1CBD5F36-6A8D-C057-482C-2F3C175EBEAD" name="ElencoCliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C329DEFE-03EB-4180-0685-09D5E824A430" name="JogadorLeilao" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D4FE798D-C351-E3FB-67BD-4E3647F58176" name="JogadoresElenco" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D2CF9C2F-8EBC-1EBE-94A6-59BB12523874" name="ParticipantesLeilao" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DC80FF57-808C-A123-BA06-3380C88AFD21" name="Relation_13" seqName="seg_0"/>
+   <object objectType="Relation" objectID="345D9393-202C-71C7-DA18-5E49E09CB734" name="Relation_15" seqName="seg_0"/>
+   <object objectType="Relation" objectID="210D864F-4421-F5D1-2EDF-C7AD65EB1618" name="Relation_9" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2C52BB15-ADF8-65D6-61E9-D8EC1928E39D" name="TimesLeilao" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

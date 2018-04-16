@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FB6CB9E-E050-37A3-6003-F0EBA268670A" name="JogadoresLeilao">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>2E99AE8A-0390-D8C5-00C0-B2062C6B4320</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Elenco_codigoElenco" id="18DCF315-2102-B335-561D-63AE80427B9B">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>50F19FE5-8B54-047B-854D-6BB661A1CCF8</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57946C22-0CCD-1F27-D477-AB731E185C85" referredColumn="EE7FC460-C270-D3F2-8E1D-F6A0A7C2ABD4"/>
+</associations>
+</Column>
+<Column name="Leiloes_codigoLeilao" id="87B9B3E2-96E5-97E6-95BA-58C1C2B0DDA1">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>7C8AD34B-BB7B-94AC-5763-84A33C3BDF5F</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8404CAEF-6062-C274-9277-392204A79E76" referredColumn="24E5457A-965B-B4A9-4F7C-5296E9F46548"/>
+</associations>
+</Column>
+<Column name="Jogadores_codigoJogador" id="2E5D1C6F-0451-E9A2-0283-BE9994289D9A">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>8BA21AD2-1BA0-3A39-FB22-F66CD41643B5</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="603AC992-D030-5E62-7A68-F5A3A8CF5E6A" referredColumn="2A16D452-9717-2174-4CBC-4007EC05D764"/>
+</associations>
+</Column>
+<Column name="disponibilidadeJogador" id="881011AC-1425-4010-12C5-997E64BB469A">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>68B3162C-F539-E513-37E0-C82FAA4AFDEB</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5354B0A8-E09D-C5C0-F65B-11F0647C4E7E" name="JogadoresLeilao_Jogadores_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>C329DEFE-03EB-4180-0685-09D5E824A430</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E5D1C6F-0451-E9A2-0283-BE9994289D9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C8FCB01-046C-9869-CACA-321B4B512A96" name="JogadoresLeilao_Elenco_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>D4FE798D-C351-E3FB-67BD-4E3647F58176</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18DCF315-2102-B335-561D-63AE80427B9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A3807CC-C39A-80E6-25B6-0296E227FBB0" name="JogadoresLeilao_Leiloes_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>345D9393-202C-71C7-DA18-5E49E09CB734</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87B9B3E2-96E5-97E6-95BA-58C1C2B0DDA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0EAC53C-AAFC-51DC-6214-53BA87D97604" name="Jogadores">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>CCC10207-AC74-1892-E942-C30DA3A95382</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoJogador" id="2A16D452-9717-2174-4CBC-4007EC05D764">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>3FB0FE59-9CB3-9AFC-AE63-CF8747CE635D</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomeJogador" id="FA29A2E4-D4DC-F318-72A2-29BDCFDD5979">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>C5999573-B42B-1CB0-79EF-32A478661B8D</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="habilidade" id="6E34C235-483E-B2E9-E424-0ABD29127CD1">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>7946E9EE-77EA-135E-439D-44B59C1C5E1B</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B6FB14A-EC3E-005C-94E3-55CBBF2D8A87" name="Jogadores_PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>ACA9801E-7FD5-A39C-F784-8C83DFCD6444</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A16D452-9717-2174-4CBC-4007EC05D764"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

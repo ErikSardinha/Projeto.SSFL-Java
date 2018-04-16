@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF7AF74F-440E-6E15-B7E9-0A74A3A71C7B" name="Elenco">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:34:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoElenco" id="EC9635C0-CAFC-E88C-4BB6-527E061306A7">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:34:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="espaco" id="67C7FCF8-62A1-978E-72B1-1FEC91D4D303">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:34:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoCliente" id="C6FBD5F3-0BF8-30E5-1ED6-E5532479EAF7">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:43:23 UTC</createdTime>
+<generatorID>1CBD5F36-6A8D-C057-482C-2F3C175EBEAD</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<referedAttribute>2A5181AD-394F-2852-B323-CDC63F760626</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="036B4C5F-E5CC-133A-31D8-96ECC2AA3387" name="Elenco PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:34:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EC9635C0-CAFC-E88C-4BB6-527E061306A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

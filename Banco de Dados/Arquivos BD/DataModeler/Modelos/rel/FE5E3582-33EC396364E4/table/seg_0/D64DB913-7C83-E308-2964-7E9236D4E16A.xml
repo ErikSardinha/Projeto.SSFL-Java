@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D64DB913-7C83-E308-2964-7E9236D4E16A" name="TimesLeilao">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>98EB79ED-6048-293D-1873-2E92E3B86391</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Elenco_codigoElenco" id="90311A2A-14CD-BAEB-D97E-F5D169D74B38">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>C8C87901-EF9D-5039-DDB8-188F6A313C77</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D96CFFD-E857-7451-72F8-FC6AE838C25E" referredColumn="EE7FC460-C270-D3F2-8E1D-F6A0A7C2ABD4"/>
+</associations>
+</Column>
+<Column name="Times_nomeTime" id="DA7E4171-1727-0666-E4FF-1E81977C89CE">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>40B72D46-4B4C-713C-5466-9DFBA84253C2</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58FE971C-F7DD-3682-F02A-3CCAE5F2ABC8" referredColumn="8AFF0518-0A25-526E-106B-8A632C306652"/>
+</associations>
+</Column>
+<Column name="Leiloes_codigoLeilao" id="1054A85C-1BBB-6DBF-F88A-B4E883C652C4">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>E0E80A14-B8CB-5611-F7DA-23A8798F2195</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D01A9868-99D4-4258-FFE6-D3D98CC17B6A" referredColumn="24E5457A-965B-B4A9-4F7C-5296E9F46548"/>
+</associations>
+</Column>
+<Column name="disponibilidadeTime" id="F862C195-73AC-428D-BAEB-8B18D0B860E5">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>2D11EE74-08CB-7F28-D1E7-E3BDA1BD2DDB</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73E14F8D-2C1A-D95C-60A0-2529D83D0DE3" name="TimesLeilao__IDX">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>210D864F-4421-F5D1-2EDF-C7AD65EB1618</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="90311A2A-14CD-BAEB-D97E-F5D169D74B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF4EBA58-B6C7-6525-AC02-E44130891BFA" name="TimesLeilao_Leiloes_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>DC80FF57-808C-A123-BA06-3380C88AFD21</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1054A85C-1BBB-6DBF-F88A-B4E883C652C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3F07620-2973-0FCC-96A7-17C964E16D59" name="TimesLeilao_Elenco_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>210D864F-4421-F5D1-2EDF-C7AD65EB1618</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90311A2A-14CD-BAEB-D97E-F5D169D74B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75A3AF85-72AB-0211-FACA-57EC9E63A434" name="TimesLeilao_Times_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>2C52BB15-ADF8-65D6-61E9-D8EC1928E39D</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA7E4171-1727-0666-E4FF-1E81977C89CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

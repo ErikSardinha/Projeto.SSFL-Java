@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E0475D6C-F5B1-9EE1-0792-3CB91F7E78B4" name="Clientes" seqName="seg_0"/>
+   <object objectType="Table" objectID="472D619C-954A-F5B0-94CC-03268BB1DCC4" name="Elenco" seqName="seg_0"/>
+   <object objectType="Table" objectID="A0EAC53C-AAFC-51DC-6214-53BA87D97604" name="Jogadores" seqName="seg_0"/>
+   <object objectType="Table" objectID="3FB6CB9E-E050-37A3-6003-F0EBA268670A" name="JogadoresLeilao" seqName="seg_0"/>
+   <object objectType="Table" objectID="5F7521E4-E2BF-C94A-7158-7C86AF1F33A9" name="Leiloes" seqName="seg_0"/>
+   <object objectType="Table" objectID="7F8DE382-3E12-B2CC-A8D7-236859557AD2" name="ParticipantesLeilao" seqName="seg_0"/>
+   <object objectType="Table" objectID="B540C63F-494B-5FDB-364A-6E1E7F8D80B4" name="Times" seqName="seg_0"/>
+   <object objectType="Table" objectID="D64DB913-7C83-E308-2964-7E9236D4E16A" name="TimesLeilao" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C7CD1FA2-1271-52C8-DEC0-4D920119C56A" name="Elenco_Clientes_FK" seqName="seg_0" containerID="472D619C-954A-F5B0-94CC-03268BB1DCC4" refContainerID="E0475D6C-F5B1-9EE1-0792-3CB91F7E78B4"/>
+   <object objectType="FKIndexAssociation" objectID="E3E35F74-1F96-D91E-2040-4DB40930E531" name="FK_ASS_20" seqName="seg_0" containerID="7F8DE382-3E12-B2CC-A8D7-236859557AD2" refContainerID="5F7521E4-E2BF-C94A-7158-7C86AF1F33A9"/>
+   <object objectType="FKIndexAssociation" objectID="6C9E7FCE-1E29-B08B-F9DF-5B5F7A57537A" name="FK_ASS_21" seqName="seg_0" containerID="7F8DE382-3E12-B2CC-A8D7-236859557AD2" refContainerID="E0475D6C-F5B1-9EE1-0792-3CB91F7E78B4"/>
+   <object objectType="FKIndexAssociation" objectID="57946C22-0CCD-1F27-D477-AB731E185C85" name="JogadoresLeilao_Elenco_FK" seqName="seg_0" containerID="3FB6CB9E-E050-37A3-6003-F0EBA268670A" refContainerID="472D619C-954A-F5B0-94CC-03268BB1DCC4"/>
+   <object objectType="FKIndexAssociation" objectID="603AC992-D030-5E62-7A68-F5A3A8CF5E6A" name="JogadoresLeilao_Jogadores_FK" seqName="seg_0" containerID="3FB6CB9E-E050-37A3-6003-F0EBA268670A" refContainerID="A0EAC53C-AAFC-51DC-6214-53BA87D97604"/>
+   <object objectType="FKIndexAssociation" objectID="8404CAEF-6062-C274-9277-392204A79E76" name="JogadoresLeilao_Leiloes_FK" seqName="seg_0" containerID="3FB6CB9E-E050-37A3-6003-F0EBA268670A" refContainerID="5F7521E4-E2BF-C94A-7158-7C86AF1F33A9"/>
+   <object objectType="FKIndexAssociation" objectID="9D96CFFD-E857-7451-72F8-FC6AE838C25E" name="TimesLeilao_Elenco_FK" seqName="seg_0" containerID="D64DB913-7C83-E308-2964-7E9236D4E16A" refContainerID="472D619C-954A-F5B0-94CC-03268BB1DCC4"/>
+   <object objectType="FKIndexAssociation" objectID="D01A9868-99D4-4258-FFE6-D3D98CC17B6A" name="TimesLeilao_Leiloes_FK" seqName="seg_0" containerID="D64DB913-7C83-E308-2964-7E9236D4E16A" refContainerID="5F7521E4-E2BF-C94A-7158-7C86AF1F33A9"/>
+   <object objectType="FKIndexAssociation" objectID="58FE971C-F7DD-3682-F02A-3CCAE5F2ABC8" name="TimesLeilao_Times_FK" seqName="seg_0" containerID="D64DB913-7C83-E308-2964-7E9236D4E16A" refContainerID="B540C63F-494B-5FDB-364A-6E1E7F8D80B4"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

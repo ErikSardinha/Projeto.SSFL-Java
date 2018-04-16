@@ -1,0 +1,47 @@
+insert INTO Clientes (codigoCliente, nomeCliente, email) values ('01', 'luiza leite' , 'luiza.lleite@hotmail.com');
+insert INTO Clientes (codigoCliente, nomeCliente, email) values ('02', 'Julieta carma', 'juju@hotmail.com');
+insert INTO Clientes (codigoCliente, nomeCliente, email) values ('03', 'Theo Santos', 'theo.velardo@hotmail.com');
+insert INTO Clientes (codigoCliente, nomeCliente, email) values ('04', 'Elena dias', 'elenaleite@hotmail.com');
+insert INTO Clientes (codigoCliente, nomeCliente, email) values ('05', 'Miguel leite', 'MiguelLeite@hotmail.com');
+
+insert INTO Jogadores (codigoJogador, nomeJogador, habilidade) values ('111', 'Neymar', '94');
+insert INTO Jogadores (codigoJogador, nomeJogador, habilidade) values ('222', 'Cristiano Ronaldo', '93');
+insert INTO Jogadores (codigoJogador, nomeJogador, habilidade) values ('333', 'Messi', '93');
+insert INTO Jogadores (codigoJogador, nomeJogador, habilidade) values ('444', 'Philippe Coutinho', '90');
+insert INTO Jogadores (codigoJogador, nomeJogador, habilidade) values ('555', 'Arjen Robben', '90');
+
+insert INTO Times (nomeTime, apelidoTime) values ('Barcelona','BAR');
+insert INTO Times (nomeTime, apelidoTime) values ('Real Madrid','RMD');
+insert INTO Times (nomeTime, apelidoTime) values ('PSG','PSG');
+insert INTO Times (nomeTime, apelidoTime) values ('Juventus','JUV');
+insert INTO Times (nomeTime, apelidoTime) values ('Corinthians','COR');
+
+insert INTO Leiloes (codigoLeilao, inicio) values ('001', '2013-03-20');
+insert INTO Leiloes (codigoLeilao, inicio) values ('002', '2013-04-02');
+insert INTO Leiloes (codigoLeilao, inicio) values ('003', '2015-05-15');
+insert INTO Leiloes (codigoLeilao, inicio) values ('004', '2016-06-03');
+insert INTO Leiloes (codigoLeilao, inicio) values ('005', '2017-07-23');
+
+insert INTO Elenco (codigoElenco, Clientes_codigoCliente) values ('001','01');
+insert INTO Elenco (codigoElenco, Clientes_codigoCliente) values ('002','02');
+insert INTO Elenco (codigoElenco, Clientes_codigoCliente) values ('003','03');
+insert INTO Elenco (codigoElenco, Clientes_codigoCliente) values ('004','04');
+insert INTO Elenco (codigoElenco, Clientes_codigoCliente) values ('005','05');
+
+insert INTO ParticipantesLeilao (Leiloes_codigoLeilao, Clientes_codigoCliente) values ('001','01');
+insert INTO ParticipantesLeilao (Leiloes_codigoLeilao, Clientes_codigoCliente) values ('001','03');
+insert INTO ParticipantesLeilao (Leiloes_codigoLeilao, Clientes_codigoCliente) values ('001','02');
+insert INTO ParticipantesLeilao (Leiloes_codigoLeilao, Clientes_codigoCliente) values ('001','04');
+insert INTO ParticipantesLeilao (Leiloes_codigoLeilao, Clientes_codigoCliente) values ('001','05');
+
+insert INTO JogadoresLeilao(Leiloes_codigoLeilao, Jogadores_codigoJogador) values ('001','111');
+insert INTO JogadoresLeilao(Leiloes_codigoLeilao, Jogadores_codigoJogador) values ('001','222');
+insert INTO JogadoresLeilao(Leiloes_codigoLeilao, Jogadores_codigoJogador) values ('001','333');
+insert INTO JogadoresLeilao(Elenco_codigoElenco, Leiloes_codigoLeilao, Jogadores_codigoJogador) values ('02','001','444');
+insert INTO JogadoresLeilao(Elenco_codigoElenco, Leiloes_codigoLeilao, Jogadores_codigoJogador) values ('01','001','555');
+
+insert INTO TimesLeilao(Times_nomeTime, Leiloes_codigoLeilao) values ('Corinthians','001');
+insert INTO TimesLeilao(Times_nomeTime, Leiloes_codigoLeilao) values ('Real Madrid','001');
+insert INTO TimesLeilao(Elenco_codigoElenco, Times_nomeTime, Leiloes_codigoLeilao) values ('003','Barcelona','001');
+insert INTO TimesLeilao(Elenco_codigoElenco, Times_nomeTime, Leiloes_codigoLeilao) values ('004','Juventus','001');
+insert INTO TimesLeilao(Elenco_codigoElenco, Times_nomeTime, Leiloes_codigoLeilao) values ('005','PSG','001');

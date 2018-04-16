@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E89EFE0D-1FC9-71DE-5B6C-8D4186CFB30D" name="Times">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:36:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nomeTime" id="3BAC15EB-3F65-D73F-50A8-E2CD9F7DAF23">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:36:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apelidoTime" id="573DF887-6839-25A9-6284-E15CCDA71175">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:37:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="460B646E-20BC-492A-F730-C084089DF616" name="Times PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:37:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BAC15EB-3F65-D73F-50A8-E2CD9F7DAF23</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="472D619C-954A-F5B0-94CC-03268BB1DCC4" name="Elenco">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>FF7AF74F-440E-6E15-B7E9-0A74A3A71C7B</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoElenco" id="EE7FC460-C270-D3F2-8E1D-F6A0A7C2ABD4">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>EC9635C0-CAFC-E88C-4BB6-527E061306A7</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="espaco" id="09462888-DD7F-895B-A0CC-651F7611A836">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>67C7FCF8-62A1-978E-72B1-1FEC91D4D303</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clientes_codigoCliente" id="5055784E-55E3-BF2F-D545-CDAFD4B7A2FE">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>C6FBD5F3-0BF8-30E5-1ED6-E5532479EAF7</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7CD1FA2-1271-52C8-DEC0-4D920119C56A" referredColumn="6BFFFD78-D73C-AEDF-4013-7FECE7E8035E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E7054DD-977F-35DB-511A-D1D352D9646B" name="Elenco_PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>036B4C5F-E5CC-133A-31D8-96ECC2AA3387</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE7FC460-C270-D3F2-8E1D-F6A0A7C2ABD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9122F342-B338-C210-5C7F-38D7C05D2E82" name="Elenco__IDX">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1CBD5F36-6A8D-C057-482C-2F3C175EBEAD</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5055784E-55E3-BF2F-D545-CDAFD4B7A2FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="657059E6-8915-7A6C-E592-5C2AEDEB24E1" name="Elenco_Clientes_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>1CBD5F36-6A8D-C057-482C-2F3C175EBEAD</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5055784E-55E3-BF2F-D545-CDAFD4B7A2FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

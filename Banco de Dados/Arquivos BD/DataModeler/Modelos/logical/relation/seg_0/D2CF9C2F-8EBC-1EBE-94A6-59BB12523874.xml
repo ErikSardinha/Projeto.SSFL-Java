@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ParticipantesLeilao" directorySegmentName="seg_0" id="D2CF9C2F-8EBC-1EBE-94A6-59BB12523874">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:33:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="A64EA1C0-B423-0414-FCFF-22A43C86CB1E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6E207D40-9CDF-F292-50D4-427320F9165C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DBF33551-9381-3A05-2A76-76B27AB500BE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

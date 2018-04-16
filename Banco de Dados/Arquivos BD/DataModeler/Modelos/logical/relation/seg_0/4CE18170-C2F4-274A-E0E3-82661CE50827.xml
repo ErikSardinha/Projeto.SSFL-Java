@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TimeElenco" directorySegmentName="seg_0" id="4CE18170-C2F4-274A-E0E3-82661CE50827">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:45:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="A64EA1C0-B423-0414-FCFF-22A43C86CB1E" value="true"/>
+</engineerTo>
+<sourcePk>036B4C5F-E5CC-133A-31D8-96ECC2AA3387</sourcePk>
+<targetPk>460B646E-20BC-492A-F730-C084089DF616</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FF7AF74F-440E-6E15-B7E9-0A74A3A71C7B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E89EFE0D-1FC9-71DE-5B6C-8D4186CFB30D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

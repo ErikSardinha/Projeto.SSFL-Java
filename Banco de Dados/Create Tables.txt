@@ -1,0 +1,163 @@
+CREATE DATABASE BDProjeto;
+
+USE BDProjeto;
+
+
+CREATE TABLE Clientes(
+    
+codigoCliente INTEGER NOT NULL ,
+    
+nomeCliente   VARCHAR (40) NOT NULL ,
+    
+email         VARCHAR (40) NOT NULL
+  
+);
+
+ALTER TABLE Clientes ADD CONSTRAINT Clientes_PK PRIMARY KEY ( codigoCliente ) ;
+
+
+
+CREATE TABLE Elenco(
+    
+codigoElenco           INTEGER NOT NULL ,
+    
+espaco                 BOOL ,
+    
+Clientes_codigoCliente INTEGER NOT NULL
+  
+);
+
+CREATE UNIQUE INDEX Elenco__IDX ON Elenco(Clientes_codigoCliente ASC);
+
+ALTER TABLE Elenco ADD CONSTRAINT Elenco_PK PRIMARY KEY ( codigoElenco );
+
+
+
+CREATE TABLE Jogadores(
+    
+codigoJogador INTEGER NOT NULL ,
+    
+nomeJogador   VARCHAR (40 ) NOT NULL ,
+    
+habilidade    INTEGER NOT NULL
+  
+);
+
+ALTER TABLE Jogadores ADD CONSTRAINT Jogadores_PK PRIMARY KEY ( codigoJogador );
+
+
+
+CREATE TABLE JogadoresLeilao(
+    
+Elenco_codigoElenco     INTEGER ,
+    
+Leiloes_codigoLeilao    INTEGER NOT NULL ,
+    
+Jogadores_codigoJogador INTEGER NOT NULL ,
+    
+disponibilidadeJogador  BOOL
+  
+);
+
+
+
+ALTER TABLE JogadoresLeilao ADD CONSTRAINT JogadoresLeilao_PK PRIMARY KEY ( Leiloes_codigoLeilao, Jogadores_codigoJogador) ;
+
+CREATE TABLE Leiloes(
+    
+codigoLeilao INTEGER NOT NULL ,
+    
+inicio       DATE NOT NULL ,
+    
+condicao     BOOL
+  
+);
+
+ALTER TABLE Leiloes ADD CONSTRAINT Leiloes_PK PRIMARY KEY ( codigoLeilao ) ;
+
+
+
+CREATE TABLE ParticipantesLeilao(
+    
+Leiloes_codigoLeilao   INTEGER NOT NULL ,
+    
+Clientes_codigoCliente INTEGER NOT NULL
+  
+);
+
+ALTER TABLE ParticipantesLeilao ADD CONSTRAINT ParticipantesLeilao_PK PRIMARY KEY ( Leiloes_codigoLeilao, Clientes_codigoCliente ) ;
+
+
+
+CREATE TABLE Times(
+    
+nomeTime    VARCHAR (40 ) NOT NULL ,
+    
+apelidoTime VARCHAR (3 ) NOT NULL
+  
+);
+
+ALTER TABLE Times ADD CONSTRAINT Times_PK PRIMARY KEY ( nomeTime ) ;
+
+
+
+CREATE TABLE TimesLeilao(
+    
+Elenco_codigoElenco  INTEGER,
+    
+Times_nomeTime       VARCHAR (40 ) NOT NULL ,
+    
+Leiloes_codigoLeilao INTEGER NOT NULL ,
+    
+disponibilidadeTime  BOOL
+  ) ;
+
+ALTER TABLE TimesLeilao ADD CONSTRAINT TimesLeilao_PK PRIMARY KEY ( Leiloes_codigoLeilao, Times_nomeTime) ;
+
+ALTER TABLE Elenco ADD CONSTRAINT Elenco_Clientes_FK FOREIGN KEY ( Clientes_codigoCliente ) REFERENCES Clientes ( codigoCliente ) ON
+
+DELETE CASCADE;
+
+
+
+ALTER TABLE ParticipantesLeilao ADD CONSTRAINT FK_ASS_20 FOREIGN KEY ( Leiloes_codigoLeilao ) REFERENCES Leiloes ( codigoLeilao );
+
+
+
+ALTER TABLE ParticipantesLeilao ADD CONSTRAINT FK_ASS_21 FOREIGN KEY ( Clientes_codigoCliente ) REFERENCES Clientes ( codigoCliente );
+
+
+
+ALTER TABLE JogadoresLeilao ADD CONSTRAINT JogadoresLeilao_Elenco_FK FOREIGN KEY ( Elenco_codigoElenco ) REFERENCES Elenco ( codigoElenco ) ON
+
+DELETE SET NULL ;
+
+
+
+ALTER TABLE JogadoresLeilao ADD CONSTRAINT JogadoresLeilao_Jogadores_FK FOREIGN KEY ( Jogadores_codigoJogador ) REFERENCES Jogadores ( codigoJogador ) ON
+
+DELETE CASCADE ;
+
+
+
+ALTER TABLE JogadoresLeilao ADD CONSTRAINT JogadoresLeilao_Leiloes_FK FOREIGN KEY ( Leiloes_codigoLeilao ) REFERENCES Leiloes ( codigoLeilao ) ON
+
+DELETE CASCADE ;
+
+
+
+ALTER TABLE TimesLeilao ADD CONSTRAINT TimesLeilao_Elenco_FK FOREIGN KEY ( Elenco_codigoElenco ) REFERENCES Elenco ( codigoElenco ) ON
+
+DELETE SET NULL ;
+
+
+
+ALTER TABLE TimesLeilao ADD CONSTRAINT TimesLeilao_Leiloes_FK FOREIGN KEY ( Leiloes_codigoLeilao ) REFERENCES Leiloes ( codigoLeilao ) ON
+
+DELETE CASCADE ;
+
+
+
+ALTER TABLE TimesLeilao ADD CONSTRAINT TimesLeilao_Times_FK FOREIGN KEY ( Times_nomeTime ) REFERENCES Times ( nomeTime ) ON
+
+DELETE CASCADE ;

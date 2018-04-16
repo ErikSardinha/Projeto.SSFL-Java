@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Transferencias" directorySegmentName="seg_0" id="058BB516-F7A1-40F0-271C-21E68974C04E">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:35:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="A64EA1C0-B423-0414-FCFF-22A43C86CB1E" value="true"/>
+</engineerTo>
+<sourcePk>036B4C5F-E5CC-133A-31D8-96ECC2AA3387</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FF7AF74F-440E-6E15-B7E9-0A74A3A71C7B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CCC10207-AC74-1892-E942-C30DA3A95382</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

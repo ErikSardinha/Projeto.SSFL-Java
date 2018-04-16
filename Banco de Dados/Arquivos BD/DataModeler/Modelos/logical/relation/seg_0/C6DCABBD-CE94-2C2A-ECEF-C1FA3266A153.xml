@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JogadoresLeilao" directorySegmentName="seg_0" id="C6DCABBD-CE94-2C2A-ECEF-C1FA3266A153">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:34:02 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="A64EA1C0-B423-0414-FCFF-22A43C86CB1E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6E207D40-9CDF-F292-50D4-427320F9165C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CCC10207-AC74-1892-E942-C30DA3A95382</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

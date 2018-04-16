@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8404CAEF-6062-C274-9277-392204A79E76" containerWithKeyObject="3FB6CB9E-E050-37A3-6003-F0EBA268670A" localFKIndex="5A3807CC-C39A-80E6-25B6-0296E227FBB0" name="JogadoresLeilao_Leiloes_FK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>345D9393-202C-71C7-DA18-5E49E09CB734</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>5F7521E4-E2BF-C94A-7158-7C86AF1F33A9</referredTableID>
+<keyObject>7DF3F097-4EEB-BA3A-0348-3949ADF9224B</keyObject>
+<referredKeyID>7DF3F097-4EEB-BA3A-0348-3949ADF9224B</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

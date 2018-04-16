@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98EB79ED-6048-293D-1873-2E92E3B86391" name="TimesLeilao">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 00:48:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoElenco" id="C8C87901-EF9D-5039-DDB8-188F6A313C77">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 00:50:01 UTC</createdTime>
+<generatorID>210D864F-4421-F5D1-2EDF-C7AD65EB1618</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EC9635C0-CAFC-E88C-4BB6-527E061306A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nomeTime" id="40B72D46-4B4C-713C-5466-9DFBA84253C2">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 00:53:06 UTC</createdTime>
+<generatorID>2C52BB15-ADF8-65D6-61E9-D8EC1928E39D</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<referedAttribute>3BAC15EB-3F65-D73F-50A8-E2CD9F7DAF23</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoLeilao" id="E0E80A14-B8CB-5611-F7DA-23A8798F2195">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 00:55:35 UTC</createdTime>
+<generatorID>DC80FF57-808C-A123-BA06-3380C88AFD21</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<referedAttribute>D8253892-6A4A-B358-A6D2-7F19567E0D7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="disponibilidadeTime" id="2D11EE74-08CB-7F28-D1E7-E3BDA1BD2DDB">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:17:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

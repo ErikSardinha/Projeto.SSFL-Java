@@ -1,0 +1,196 @@
+Delimiter ||
+
+CREATE TRIGGER novoLeilao before insert on Leiloes
+for each row
+begin
+	set new.condicao = true;
+end ||
+CREATE TRIGGER registrarDispJogador before Insert on jogadoresleilao
+
+FOR EACH ROW
+
+BEGIN
+	
+	
+if new.Elenco_codigoElenco = null then
+		
+		
+set new.disponibilidadeJogador = true;
+	
+	
+else
+		
+		
+Call ElencoCheio(new.Elenco_codigoElenco);
+		
+if new.new.Elenco_codigoElenco = null then
+			
+set new.disponibilidadeJogador = true;
+		
+end if;
+	
+	
+end if;
+
+
+End ||
+
+CREATE TRIGGER registrarDispTime before Insert on timesleilao
+
+for each row
+
+begin
+
+	if new.Elenco_codigoElenco = null then
+	
+		set new.disponibilidadeTime = true;
+
+	else
+	
+		Call TimeExiste(new.Elenco_codigoElenco);
+	
+		set new.disponibilidadeTime = false;	
+
+	end if;
+
+end ||
+CREATE TRIGGER alterarDispJogador before Update on jogadoresleilao
+
+
+FOR EACH ROW
+
+
+BEGIN
+	
+	
+if new.Elenco_codigoElenco = null then
+		
+		
+set new.disponibilidadeJogador = true;
+	
+	
+else
+		
+		
+Call ElencoCheio(new.Elenco_codigoElenco);
+		
+if new.new.Elenco_codigoElenco = null then
+			
+set new.disponibilidadeJogador = true;
+		
+end if;
+	
+	
+end if;
+
+
+End ||
+
+CREATE TRIGGER alterarDispTime before update on timesleilao
+
+for each row
+
+begin
+	
+if Elenco_codigoElenco = null then
+		
+	set new.disponibilidadeTime = true;
+	
+else
+		
+	set new.disponibilidadeTime = false;
+	
+end if;
+
+end ||
+
+
+CREATE PROCEDURE TimeExiste(codigo int)
+
+begin
+
+	if ((select count(*) from timesleilao where Elenco_codigoElenco = codigo)>1) then
+	
+		Update timesleilao set Elenco_codigoElenco = null, disponibilidadeTime = true where (Elenco_codigoElenco = codigo);
+
+	end if;
+
+end ||
+CREATE PROCEDURE ElencoCheio(codigo int)
+
+
+begin
+
+	
+if (select count(*) from JogadoresLeilao as jl INNER JOIN Elenco as e 
+		
+on (jl.ELenco_codigoElenco = E.codigoElenco) where (jl.Elenco_codigoElenco = codigo)
+		
+) > 23 then
+	
+		
+update Elenco set espaco = false where elenco.codigoElenco = codigo;
+	
+		
+update jogadoresLeilao set Elenco_codigoElenco = null, disponibilidadeJogador = true 
+        
+where Elenco_codigoELenco = codigo;
+	
+end if;
+
+end ||
+
+
+CREATE OR REPLACE VIEW UserElenco AS
+
+Select 
+	
+	c.nomeCliente as Usuario, 
+    
+	t.Times_nomeTime as Time, 
+    
+	count(j.Jogadores_codigoJogador) as Jogadores, 
+    
+	avg(jog.habilidade) as Media
+
+from Elenco e
+
+inner join Clientes as c 
+on (e.Clientes_codigoCliente = c.codigoCliente)
+
+inner join timesleilao as t 
+on (t.Elenco_codigoElenco = e.codigoElenco)
+
+inner join jogadoresleilao as j 
+on (j.Elenco_codigoElenco = e.codigoElenco)
+
+inner join jogadores as jog 
+on (jog.codigoJogador = j.Jogadores_codigoJogador)
+order by c.nomeCliente asc;
+
+||
+
+CREATE OR REPLACE VIEW LeiloesOp as
+
+select
+	
+	l.codigoLeilao as Codigo,
+    
+	count(tl.Leiloes_codigoLeilao) as Times,
+    
+	count(jl.Leiloes_codigoLeilao) as Jogadores,
+    
+	count(cl.Leiloes_codigoLeilao) as Usuarios
+
+from
+Leiloes as l
+inner join timesleilao as tl 
+on l.codigoLeilao = tl.Leiloes_codigoLeilao
+inner join jogadoresleilao as jl 
+on l.codigoLeilao = jl.Leiloes_codigoLeilao
+inner join participantesleilao as cl 
+on l.codigoLeilao = cl.Leiloes_codigoLeilao
+where l.condicao = true 
+group by l.codigoLeilao 
+order by cl.Clientes_codigoCliente asc;
+||

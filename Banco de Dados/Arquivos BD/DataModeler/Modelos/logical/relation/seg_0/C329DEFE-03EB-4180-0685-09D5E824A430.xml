@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JogadorLeilao" directorySegmentName="seg_0" id="C329DEFE-03EB-4180-0685-09D5E824A430">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 00:56:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="FE5E3582-64EA-AD1E-A6F0-33EC396364E4" value="true"/>
+</engineerTo>
+<sourcePk>ACA9801E-7FD5-A39C-F784-8C83DFCD6444</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CCC10207-AC74-1892-E942-C30DA3A95382</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2E99AE8A-0390-D8C5-00C0-B2062C6B4320</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

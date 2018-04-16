@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F8DE382-3E12-B2CC-A8D7-236859557AD2" name="ParticipantesLeilao">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Leiloes_codigoLeilao" id="E6B16528-2211-B682-80F3-B21E2B6B18F3">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3E35F74-1F96-D91E-2040-4DB40930E531" referredColumn="24E5457A-965B-B4A9-4F7C-5296E9F46548"/>
+</associations>
+</Column>
+<Column name="Clientes_codigoCliente" id="D0449C3B-3B85-C51A-688C-18ADA12820F3">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C9E7FCE-1E29-B08B-F9DF-5B5F7A57537A" referredColumn="6BFFFD78-D73C-AEDF-4013-7FECE7E8035E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BF5B82F-9CA4-6FCC-8A55-E814869356FD" name="ParticipantesLeilao_PK">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6B16528-2211-B682-80F3-B21E2B6B18F3"/>
+<colUsage columnID="D0449C3B-3B85-C51A-688C-18ADA12820F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F09498F0-7613-315D-AE26-C4618983959B" name="FK_ASS_20">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>D2CF9C2F-8EBC-1EBE-94A6-59BB12523874</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6B16528-2211-B682-80F3-B21E2B6B18F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85CA01C1-E7AB-04E4-3CBC-29196755C770" name="FK_ASS_21">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-20 01:19:32 UTC</createdTime>
+<generatorID>D2CF9C2F-8EBC-1EBE-94A6-59BB12523874</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0449C3B-3B85-C51A-688C-18ADA12820F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

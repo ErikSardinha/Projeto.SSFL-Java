@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TimesLeilao" directorySegmentName="seg_0" id="5E074EE0-E33E-C0AB-51B0-01A8112D4CA8">
+<createdBy>Positivo</createdBy>
+<createdTime>2017-11-19 14:42:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Modelos</ownerDesignName>
+<engineerTo>
+<item key="A64EA1C0-B423-0414-FCFF-22A43C86CB1E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E89EFE0D-1FC9-71DE-5B6C-8D4186CFB30D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E207D40-9CDF-F292-50D4-427320F9165C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
